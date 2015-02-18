@@ -1,0 +1,8 @@
+// this single globals.less file is used to import any other global less files
+// the amalgamation of all these global less files will be included in EVERY
+// OTHER less file. So, be sure only to put variable and mixin definitions, i.e.
+// nothing that will compile to css
+
+@import url( "../lessglobals/colours.less" );
+@import url( "../lessglobals/mixins.less" );
+// etc.

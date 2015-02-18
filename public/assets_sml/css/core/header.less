@@ -1,0 +1,169 @@
+#masthead {
+	background: @prim-teal;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	@media @sm {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	@media @xs {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.top-header {
+		@media @sm {
+			text-align: center;
+			position: relative;
+		}
+
+	}
+
+	.site-logo {
+		margin: 0;
+		float: left;
+
+		@media @sm {
+			float: none;
+			display: block;
+			width: 121px;
+			height: 50px;
+			margin: 0 auto;
+		}
+
+		a {
+			display: block;
+			text-decoration: none;
+
+			@media @sm {
+
+			}
+			img {
+
+			}
+		}
+	}
+
+	.main-navigation {
+		float: right;
+		margin-top: 13px;
+
+		@media @sm {
+			float: none;
+
+		}
+
+		@media @xs {
+			display: none;
+			background: @prim-teal;
+			position: absolute;
+			z-index: 99;
+			top: 60px;
+			left: 0;
+			width: 100%;
+			margin-top: 0;
+			padding: 15px 30px;
+			text-align: left;
+		}
+
+		@media @xs-min {
+			display: block !important;
+		}
+
+		@media @xs-portrait {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		> ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: block;
+
+
+			// @media @xs {
+			// 	border-top: 1px solid @base-white;
+			// 	padding-top: 14px;
+			// }
+			> li {
+
+				float: left;
+
+
+				& + li {
+					margin-left: 20px;
+
+					@media @sm {
+						margin-left: 0;
+
+					}
+				}
+				@media @sm {
+					display: inline-block;
+					float: none;
+					margin-top: 8px;
+
+				}
+
+				@media @xs {
+					display: block;
+					margin-top: 0;
+
+					& + li {
+						margin-top: 12px;
+					}
+				}
+				> a {
+					font-weight: 400;
+					color: #fff;
+					font-size: 18px;
+					text-transform: uppercase;
+
+					@media @sm { 
+						margin: 0 7px;
+					}
+
+				}
+
+				&.active {
+					> a {
+						font-weight: 800;
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.toggle-menu {
+	display: none;
+	border: none;
+	background: none;
+	padding: 10px;
+
+	position: absolute;
+	z-index: 3;
+	left: 30px;
+	top: 5px;
+
+	&:before {
+		content:"";
+		.sprite-icon( 24px, 18px, -2px -46px );
+		vertical-align: middle;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	@media @xs {
+		display: block;
+	}
+
+	@media @xs-portrait {
+		left: 15px;
+	}
+}
