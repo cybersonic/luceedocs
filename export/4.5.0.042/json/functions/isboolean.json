@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["decision","boolean"],"arguments":[{"required":true,"status":"implemeted","name":"value","type":"any","description":"Number or string","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isboolean","type":"java","argumentType":"fixed","description":"Determines if the object represents a boolean value"}

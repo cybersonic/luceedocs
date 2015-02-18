@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"name","type":"string","description":"name of the variable to return","defaultValue":null}],"argMin":1,"returnType":"any","status":"implemeted","name":"getvariable","type":"java","argumentType":"fixed","description":"Gets the variable referenced by the given parameter; may be fully qualified"}

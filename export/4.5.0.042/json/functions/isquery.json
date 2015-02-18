@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["query","decision"],"arguments":[{"required":true,"status":"implemeted","name":"value","type":"any","description":"Query variable","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isquery","type":"java","argumentType":"fixed","description":"Determines whether value is a query."}

@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"timezone","type":"string","description":"the timezone to be set.","defaultValue":null}],"argMin":1,"returnType":"string","status":"implemeted","name":"settimezone","type":"java","argumentType":"fixed","description":"change the timezone defintion for the current request."}

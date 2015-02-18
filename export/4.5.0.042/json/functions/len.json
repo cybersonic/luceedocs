@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"value","type":"object","description":"the length of a string","defaultValue":null}],"argMin":1,"returnType":"number","status":"implemeted","name":"len","type":"java","argumentType":"fixed","description":"Determines the length of a string, array,struct,query ..."}

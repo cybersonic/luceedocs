@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"getcontextroot","type":"java","argumentType":"fixed","description":"Returns path to the J2EE server context root for the current request."}

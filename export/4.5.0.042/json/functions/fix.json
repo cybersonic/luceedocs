@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["number"],"arguments":[{"required":true,"status":"implemeted","name":"number","type":"number","description":"A number","defaultValue":null}],"argMin":1,"returnType":"number","status":"implemeted","name":"fix","type":"java","argumentType":"fixed","description":"Converts a real number to an integer."}

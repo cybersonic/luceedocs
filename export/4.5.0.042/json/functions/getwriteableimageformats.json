@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["image"],"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"getwriteableimageformats","type":"java","argumentType":"fixed","description":"Returns a list of image formats that Lucee can write on the operating system where Lucee is deployed."}

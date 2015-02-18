@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"string","type":"string","description":"","defaultValue":null}],"argMin":1,"returnType":"any","status":"deprecated","name":"unserializejava","type":"java","argumentType":"fixed","description":"literal defintion of a serialized Java Object by function serialize"}

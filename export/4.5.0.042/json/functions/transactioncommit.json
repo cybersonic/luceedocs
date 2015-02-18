@@ -1,0 +1,1 @@
+{"argMax":0,"arguments":[],"argMin":0,"source":"/Users/markdrew/Projects/lucee/lib/ext/lucee-server/context/library/function/transactionCommit.cfm","returnType":"void","status":"implemeted","name":"transactioncommit","type":"cfml","description":"commits a pending transaction","argumentType":"fixed"}

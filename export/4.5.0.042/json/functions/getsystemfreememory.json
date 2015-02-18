@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[],"argMin":0,"returnType":"number","status":"implemeted","name":"getsystemfreememory","type":"java","argumentType":"fixed","description":"The amount of memory that is currently free, in bytes."}

@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"entity","type":"any","description":"The entity that must be attached to the ORM session.","defaultValue":null}],"argMin":1,"returnType":"any","status":"implemeted","name":"entitymerge","type":"java","argumentType":"fixed","description":"Attaches given enity to current ORM session"}

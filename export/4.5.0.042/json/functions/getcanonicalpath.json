@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"path","type":"string","description":"path to a component or component itself","defaultValue":null}],"argMin":1,"returnType":"string","status":"implemeted","name":"getcanonicalpath","type":"java","argumentType":"fixed","description":"Returns the canonical pathname string based on the given string."}

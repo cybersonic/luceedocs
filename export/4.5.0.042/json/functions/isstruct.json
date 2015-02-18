@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["decision","strcuct"],"arguments":[{"required":true,"status":"implemeted","name":"variable","type":"any","description":"Variable name","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isstruct","type":"java","argumentType":"fixed","description":"Determines if the object is a structure"}

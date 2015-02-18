@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[],"argMin":0,"returnType":"void","status":"implemeted","name":"ormcloseallsessions","type":"java","argumentType":"fixed","description":"Closes all ORM session."}

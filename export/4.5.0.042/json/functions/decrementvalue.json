@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"number","type":"number","description":"Number to decrement","defaultValue":null}],"argMin":1,"returnType":"number","status":"deprecated","name":"decrementvalue","type":"java","argumentType":"fixed","description":"this function is deprecated, use instead the -- operator;Decrements the current number by one"}

@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[],"argMin":0,"returnType":"array","status":"deprecated","name":"getcurrentcontext","type":"java","argumentType":"fixed","description":"this function is deprecated, use function CallStackGet instead."}

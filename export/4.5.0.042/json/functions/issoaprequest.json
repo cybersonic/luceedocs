@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["decision","webservice"],"arguments":[],"argMin":0,"returnType":"boolean","status":"implemeted","name":"issoaprequest","type":"java","argumentType":"fixed","description":"Determines whether a CFC is being called as a web service."}

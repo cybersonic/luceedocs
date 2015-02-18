@@ -1,0 +1,1 @@
+{"argMax":-1,"keywords":["decision","wddx"],"arguments":[{"required":true,"status":"implemeted","name":"value","type":"any","description":"A WDDX packet","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"iswddx","type":"java","argumentType":"fixed","description":"Determines whether a value is a well-formed WDDX packet."}

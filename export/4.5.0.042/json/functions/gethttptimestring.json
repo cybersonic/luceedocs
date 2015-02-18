@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[{"required":false,"status":"implemeted","name":"date_time_object","type":"datetime","description":"A date-time value","defaultValue":null}],"argMin":0,"returnType":"string","status":"implemeted","name":"gethttptimestring","type":"java","argumentType":"fixed","description":"Gets the current time, in the Universal Time code (UTC)."}

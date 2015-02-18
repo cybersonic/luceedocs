@@ -1,0 +1,1 @@
+{"argMax":-1,"arguments":[],"argMin":0,"returnType":"date","status":"implemeted","name":"applicationstarttime","type":"java","argumentType":"fixed","description":"Provides information about the time when the current application scope was created."}
