@@ -1,7 +1,7 @@
 {
-  "name": "railodocs",
+  "name": "luceedocs",
   "version": "0.0.1",
-  "description": "Railo documentation server.",
+  "description": "Lucee Server Documentation",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

@@ -1,4 +1,4 @@
-# Welcome to RailoDocs
+# Welcome to LucceDocs
 
 Here goes al the information about the docs you need to know!
 
