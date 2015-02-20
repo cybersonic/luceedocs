@@ -37,6 +37,10 @@ body {
 .alphabet.affix {
 	top:30px;
 }
+/** Autocomplete search adjustment **/
+.ui-autocomplete {
+	margin-top: 75px;
+}
 /**In-Page Positional Anchors - to offset fixed nav**/
 .anchor:before {
 	content: ''; 

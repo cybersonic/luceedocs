@@ -25,6 +25,7 @@ exports.get = function(req, res){
 	var id = util.stripJSONSuffix(req.params.id);
 	var currentversion = version.current();
 	var functionData = fun.get(id, currentversion);
+	var marked=require('marked');
 
 	if (functionData === undefined) {
 		return res.render('404', { status: 404, url: req.url });
@@ -41,7 +42,8 @@ exports.get = function(req, res){
 		tagcode: fun.toTagCode(functionData),
 		scriptcode: fun.toTagCode(functionData),
 		arginfo : fun.argumentTitles(),
-		argumentcode : fun.toArgumentString(functionData)
+		argumentcode : fun.toArgumentString(functionData),
+		renderMarkdown : marked
 		
 	});
 

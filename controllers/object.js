@@ -24,7 +24,8 @@ exports.getObject = function(req, res){
     var type = req.params.type;
 
     var currentversion = version.current();
-    var  functionData = fun.getByTypeAndFunction(type , func, currentversion);
+    var functionData = fun.getByTypeAndFunction(type , func, currentversion);
+    var marked=require('marked');
 
 
 
@@ -40,7 +41,8 @@ exports.getObject = function(req, res){
         version: currentversion,
         tagcode: fun.toObjectCode(functionData),
         arginfo : fun.argumentTitles(),
-        argumentcode : fun.toArgumentString(functionData)
+        argumentcode : fun.toArgumentString(functionData),
+        renderMarkdown : marked
 
     });
 
