@@ -39,8 +39,7 @@ for(t in objects){
             var ObjectName = sortedObjects[name];
             var ObjectFuncs = AtoZ[ObjectName];
         %>
-
-        <div class="col-sm-4" id="<%= ObjectName %>">
+        <div id="<%= ObjectName %>" class="anchor col-sm-4">
             <h4><%= ObjectName.toUpperCase() %></h4>
             <ul class="list list-unstyled">
                 <% for(tagItem in objects[ObjectName]) {%>
