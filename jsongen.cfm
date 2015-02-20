@@ -1,9 +1,22 @@
 <cfscript>
-param name="url.exportPath" default="#expandPath("../../../export")#";
+param name="url.exportPath" default="#expandPath("/export")#";
 
 	sep = SERVER.separator.file;
 	version= SERVER.lucee.version;
-
+		
+	
+	
+	
+	versioninfo = {
+		'loaderVersion' : SERVER.lucee.loaderVersion,
+		'release-date' : SERVER.lucee['release-date'],
+		'state' : SERVER.lucee.state,
+		'version' : SERVER.lucee.version,
+		'versionName' : SERVER.lucee.versionName,
+		'versionNameExplanation' : SERVER.lucee.versionNameExplanation,
+	
+	}
+	
 
 	ExportPath = "#url.exportPath##sep##version#";
 	JSONDocsPath = ExportPath & "#sep#json";
@@ -73,11 +86,7 @@ param name="url.exportPath" default="#expandPath("../../../export")#";
 	arraySort(taglist, "textnocase", "ASC");
 	FileWrite(JSONDocsPath & "#sep#tags.json", SerializeJSON(taglist));
 
-	//Finally Write the Version information json
-	versioninfo = Duplicate(SERVER.lucee);
 
-	//Remove system info
-	StructDelete(versioninfo, 'loaderPath');
 
 	FileWrite(JSONDocsPath & "#sep#version.json", SerializeJSON(versioninfo));
 </cfscript>
