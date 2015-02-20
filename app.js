@@ -24,6 +24,7 @@ var func = require('./controllers/function');
 var obj = require('./controllers/object');
 var home = require('./controllers/home');
 var search = require('./controllers/search');
+var docs = require('./controllers/docs');
 
 
 app.use(favicon(__dirname + '/public/favicon.png'));
@@ -31,7 +32,7 @@ app.use(home.before);
 app.set('view engine', 'ejs');
 app.set('layout', "layout/layout");
 app.use(expressLayouts);
-app.use(express.static(__dirname + '/public'));
+
 
 app.get('/', home.index);
 app.get('/versions*', version.list);
@@ -46,6 +47,8 @@ app.get('/objects', obj.listObjects);
 app.get('/object/:type/:function', obj.getObject);
 app.get('/functions/:filter', func.list);
 app.get('/function/:id', func.get);
+app.get('/docs/', docs.default);
+app.get('/docs/:page', docs.get);
 
 //Shortcuts for old site.
 app.get('/index.cfm', home.index);
@@ -61,6 +64,8 @@ app.get('/index.cfm/objects', obj.listObjects);
 app.get('/index.cfm/object/:type/:function', obj.getObject);
 app.get('/index.cfm/functions/:filter', func.list);
 app.get('/index.cfm/function/:id', func.get);
+
+app.use(express.static(__dirname + '/public'));
 
 
 app.use(function(req, res, next){

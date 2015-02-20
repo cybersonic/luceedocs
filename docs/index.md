@@ -1,19 +1,3 @@
 # Welcome to LuceeDocs
 
-Here goes al the information about the docs you need to know!
-
-For full documentation visit [mkdocs.org](http://mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is where we will add the docs. want to edit this page? Pretty simples actually. No need to do nuffink in this system, cos it's all in the ye olde githubbe.
