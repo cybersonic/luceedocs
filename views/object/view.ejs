@@ -55,6 +55,7 @@
 
 		<% versioninfo =  version.split(".") %>
 		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
+        <h5>
 		<% if(func.type == 'cfml') { %> 
 			
 			<%
@@ -63,17 +64,20 @@
 				
 			%>
 		
-			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
 			
 		<%}%>
 
 		<% if(func.type == 'java') { %> 
 			
-			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
 				
 		<%}%>
-	
-	<h4>Example</h4>
+
+        <a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/functions/<%= func.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
+
+
+    <h4>Example</h4>
 	<pre class="prettyprint"><%= tagcode %></pre>
 
 	<% if(func.member && Object.keys(func.member).length){ %>
