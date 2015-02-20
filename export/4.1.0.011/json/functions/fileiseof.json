@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"The file object.","name":"source","type":"any","required":true}],"description":"Determines whether Railo has reached the end of the file while reading it.","argMax":-1,"name":"fileiseof","argMin":1,"type":"java","argumentType":"fixed"}

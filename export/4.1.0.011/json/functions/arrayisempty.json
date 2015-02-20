@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Name of an array","name":"array","type":"array","required":true}],"description":"Determines if the array is empty.","argMax":-1,"name":"arrayisempty","argMin":1,"member":{"chaining":false,"name":"isEmpty","type":"array"},"type":"java","argumentType":"fixed"}

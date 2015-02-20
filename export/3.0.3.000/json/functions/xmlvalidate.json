@@ -1,1 +1,0 @@
-{"name":"xmlvalidate","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"xml","type":"string","description":"","required":true},{"name":"validator","type":"string","description":"","required":false}],"argMin":1}

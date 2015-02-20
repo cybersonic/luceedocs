@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"cache type, valid values are [object,resource,template,query]","name":"type","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"return the default cache name for a specific type","name":"cachegetdefaultcachename","type":"java","argMax":-1,"returnType":"string"}

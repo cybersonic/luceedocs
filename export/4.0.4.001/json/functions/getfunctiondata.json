@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"name of the function getting information for","name":"functionName","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"returns information to a single function","name":"getfunctiondata","type":"java","argMax":-1,"returnType":"struct"}

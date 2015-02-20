@@ -1,1 +1,0 @@
-{"name":"issoaprequest","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Returns if actuell call of a CFC is a Request via Webservice","arguments":[],"argMin":0}

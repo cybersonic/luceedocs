@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"file path","name":"path","type":"string","required":true}],"description":"Extracts a directory from an absolute path.\n        Returns the absolute path, without the filename.","argMax":-1,"name":"getdirectoryfrompath","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"A string or a variable that contains one","name":"string","type":"string","required":true}],"description":"Deletes return characters from a string.","argMax":-1,"name":"stripcr","argMin":1,"type":"java","argumentType":"fixed"}

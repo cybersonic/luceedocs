@@ -1,1 +1,0 @@
-{"name":"arrayisempty","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"array","type":"array","description":"","required":true}],"argMin":1}

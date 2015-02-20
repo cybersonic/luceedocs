@@ -1,1 +1,0 @@
-{"name":"toint","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"input","type":"any","description":"","required":true}],"argMin":1}

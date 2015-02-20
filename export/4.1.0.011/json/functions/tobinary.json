@@ -1,1 +1,0 @@
-{"returnType":"binary","status":"implemeted","arguments":[{"status":"implemeted","description":"A variable representing data in Base64-encoded format or a PDF document.","name":"data","type":"any","required":true}],"description":"Calculates the binary representation of Base64-encoded data.","argMax":-1,"name":"tobinary","argMin":1,"type":"java","argumentType":"fixed"}

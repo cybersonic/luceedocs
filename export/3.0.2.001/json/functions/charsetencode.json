@@ -1,1 +1,0 @@
-{"name":"charsetencode","argumentType":"fix","argMax":-1,"returnType":"string","description":"Encodes Binary Data to a String","arguments":[{"name":"binary","type":"binary","description":"","required":true},{"name":"encoding","type":"string","description":"","required":true}],"argMin":2}

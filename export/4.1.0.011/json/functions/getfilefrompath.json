@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"file path","name":"path","type":"string","required":true}],"description":"Extracts a filename from an absolute path.","argMax":-1,"name":"getfilefrompath","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"name":"querycolumnarray","argumentType":"fix","argMax":-1,"returnType":"array","description":"","arguments":[{"name":"query","type":"query","description":"","required":true}],"argMin":1}

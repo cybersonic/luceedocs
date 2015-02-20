@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Gets the absolute path of an application's base page.","name":"getbasetemplatepath","type":"java","argMax":-1,"returnType":"string"}

@@ -1,1 +1,0 @@
-{"name":"xmlsearch","argumentType":"fix","argMax":-1,"returnType":"array","description":"","arguments":[{"name":"node","type":"node","description":"","required":true},{"name":"xPathString","type":"string","description":"","required":true}],"argMin":2}

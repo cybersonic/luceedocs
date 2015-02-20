@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"invalidate current session, creates a new session and migrate the data from the old session to the new.","name":"sessionrotate","type":"java","argMax":-1,"returnType":"void"}

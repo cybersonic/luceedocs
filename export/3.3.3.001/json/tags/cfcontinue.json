@@ -1,1 +1,0 @@
-{"status":"implemeted","nameSpaceSeperator":"","script":{"singletype":"none","type":"single","rtexpr":false},"type":"java","nameSpace":"cf","hasNameAppendix":false,"description":"Used within a cfloop tag. Returns processing to the top of a loop.","parseBody":false,"name":"continue","bodyType":"prohibited","attributeType":"fixed","attrMax":0,"attributes":{},"attrMin":0}

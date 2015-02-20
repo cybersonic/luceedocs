@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"The URL of the link.","name":"url","type":"string","required":true}],"description":"Causes an HTML href attribute to display link results in the current Ajax container.","argMax":-1,"name":"ajaxlink","argMin":1,"type":"java","argumentType":"fixed"}

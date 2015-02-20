@@ -1,1 +1,0 @@
-{"name":"fileclose","argumentType":"fix","argMax":-1,"returnType":"void","description":"","arguments":[{"name":"fileObj","type":"any","description":"","required":true}],"argMin":1}

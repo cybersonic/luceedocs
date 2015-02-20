@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"duration","type":"number","description":"Time, in milliseconds, to stop processing the thread."}],"argMin":1,"returnType":"void","status":"implemeted","name":"sleep","type":"java","argumentType":"fixed","description":"Causes the current thread to stop processing for a specified period of time."}

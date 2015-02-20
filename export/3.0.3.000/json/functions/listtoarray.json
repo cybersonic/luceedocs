@@ -1,1 +1,0 @@
-{"name":"listtoarray","argumentType":"fix","argMax":-1,"returnType":"array","description":"","arguments":[{"name":"list","type":"string","description":"","required":true},{"name":"delimiter","type":"string","description":"","required":false},{"name":"includeEmptyFields","type":"boolean","description":"","required":false}],"argMin":1}

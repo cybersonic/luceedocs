@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"The image on which this operation is performed.","name":"name","type":"any","required":true}],"description":"Retrieves the width of the specified image.","argMax":-1,"name":"imagegetwidth","argMin":1,"type":"java","argumentType":"fixed"}

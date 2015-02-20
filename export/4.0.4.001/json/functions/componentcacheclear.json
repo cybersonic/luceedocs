@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"flush the component path cache","name":"componentcacheclear","type":"java","argMax":-1,"returnType":"void"}

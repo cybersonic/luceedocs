@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"An XML DOM object node","name":"xml","type":"xml","required":true}],"argMin":1,"status":"implemeted","description":"Determines the type of an XML document object node.","name":"xmlgetnodetype","type":"java","argMax":-1,"returnType":"string"}

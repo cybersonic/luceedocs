@@ -1,1 +1,0 @@
-{"status":"implemeted","type":"java","nameSpaceSeperator":"","script":{"singletype":"none","type":"single","rtexpr":true},"nameSpace":"cf","hasNameAppendix":false,"description":"Used to break out of a cfloop,cfwhile or cfforeach.","parseBody":false,"name":"break","bodyType":"prohibited","attributeType":"fixed","attrMax":0,"attributes":{},"attrMin":0}

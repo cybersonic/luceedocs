@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Positive real number for which to calculate the logarithm","name":"number","type":"number","required":true}],"argMin":1,"status":"implemeted","description":"Calculates the logarithm of number, to base 10.","name":"log10","type":"java","argMax":-1,"returnType":"number"}

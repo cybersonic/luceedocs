@@ -1,1 +1,0 @@
-{"name":"parameterexists","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"parameter","type":"variable_string","description":"","required":true}],"argMin":1}

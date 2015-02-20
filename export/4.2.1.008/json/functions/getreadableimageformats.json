@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["image"],"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"getreadableimageformats","type":"java","argumentType":"fixed","description":"Returns a list of image formats that Railo can read on the operating system where Railo is deployed."}

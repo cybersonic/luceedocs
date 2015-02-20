@@ -1,1 +1,0 @@
-{"name":"xmlnew","argumentType":"fix","argMax":-1,"returnType":"node","description":"","arguments":[{"name":"caseSensitive","type":"boolean","description":"","required":false}],"argMin":0}

@@ -1,1 +1,0 @@
-{"name":"lseurocurrencyformat","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"currency_number","type":"number","description":"","required":true},{"name":"type","type":"string","description":"","required":false},{"name":"locale","type":"string","description":"","required":false}],"argMin":1}

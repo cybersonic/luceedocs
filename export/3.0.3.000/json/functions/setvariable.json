@@ -1,1 +1,0 @@
-{"name":"setvariable","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"name","type":"string","description":"","required":true},{"name":"value","type":"any","description":"","required":true}],"argMin":2}

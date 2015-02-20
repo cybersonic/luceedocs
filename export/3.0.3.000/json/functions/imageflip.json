@@ -1,1 +1,0 @@
-{"name":"imageflip","argumentType":"fix","argMax":-1,"returnType":"void","description":"Flips an image across an axis.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"transpose","type":"string","description":"","required":false}],"argMin":1}

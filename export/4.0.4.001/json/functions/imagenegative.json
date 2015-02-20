@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"The image on which this operation is performed.","name":"name","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Inverts the pixel values of a image.","name":"imagenegative","type":"java","argMax":-1,"returnType":"void"}

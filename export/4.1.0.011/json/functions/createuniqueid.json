@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[],"description":"Creates a Unique Identifier. Only unique for this instance, but shorter than a UUId.","argMax":-1,"name":"createuniqueid","argMin":0,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"name":"imagenegative","argumentType":"fix","argMax":-1,"returnType":"void","description":"Inverts the pixel values of a image.","arguments":[{"name":"name","type":"any","description":"","required":true}],"argMin":1}

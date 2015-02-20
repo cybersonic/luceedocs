@@ -1,1 +1,0 @@
-{"name":"querysort","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"column_name","type":"string","description":"","required":true},{"name":"direction","type":"string","description":"","required":false}],"argMin":2}

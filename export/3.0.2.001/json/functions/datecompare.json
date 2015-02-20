@@ -1,1 +1,0 @@
-{"name":"datecompare","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"date1","type":"datetime","description":"","required":true},{"name":"date2","type":"datetime","description":"","required":true},{"name":"arg3","type":"string","description":"","required":false}],"argMin":2}

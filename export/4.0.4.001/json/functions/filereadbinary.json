@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"file path","name":"source","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Reads an on-disk or in-memory binary file (such as an executable or image file) on the server, into a binary object","name":"filereadbinary","type":"java","argMax":-1,"returnType":"any"}

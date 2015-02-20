@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"monitor_name","type":"string","description":"name of the monitor","defaultValue":null}],"argMin":1,"returnType":"any","status":"deprecated","name":"getmetricdata","type":"java","argumentType":"fixed","description":"Gets server performance metrics."}

@@ -1,1 +1,0 @@
-{"returnType":"struct","status":"implemeted","arguments":[],"description":"Makes HTTP request headers and body available to CFML pages.\n        Useful for capturing SOAP request data, which can be delivered\n        in an HTTP header.","argMax":-1,"name":"gethttprequestdata","argMin":0,"type":"java","argumentType":"fixed"}

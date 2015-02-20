@@ -1,1 +1,0 @@
-{"returnType":"any","status":"implemeted","arguments":[{"status":"implemeted","description":"On-disk or in-memory pathname or URL of the source image.","name":"path","type":"any","required":true}],"description":"Reads the source pathname or URL and creates a image.","argMax":-1,"name":"imageread","argMin":1,"type":"java","argumentType":"fixed"}

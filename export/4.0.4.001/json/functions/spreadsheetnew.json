@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"","name":"sheetName","type":"any","required":false},{"status":"implemeted","description":"","name":"xmlFormat","type":"any","required":false}],"argMin":0,"status":"implemeted","description":"","name":"spreadsheetnew","type":"java","argMax":-1,"returnType":"any"}

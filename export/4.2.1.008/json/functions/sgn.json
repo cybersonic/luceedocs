@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["number","math"],"arguments":[{"required":true,"status":"implemeted","name":"number","type":"number","description":"A number","defaultValue":null}],"argMin":1,"returnType":"number","status":"implemeted","name":"sgn","type":"java","argumentType":"fixed","description":"Determines the sign of a number."}

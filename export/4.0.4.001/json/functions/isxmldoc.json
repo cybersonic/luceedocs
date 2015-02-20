@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Name of an XML document object","name":"value","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether a function parameter is an Extended Markup\n        language (XML) document object.","name":"isxmldoc","type":"java","argMax":-1,"returnType":"boolean"}

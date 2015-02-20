@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"delimiter used for the list","name":"delimiter","type":"string","required":false}],"description":"Gets ancestor tag names, starting with the parent tag.","argMax":-1,"name":"getbasetaglist","argMin":0,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"name":"querynew","argumentType":"fix","argMax":-1,"returnType":"query","description":"","arguments":[{"name":"columnlist","type":"string","description":"","required":true},{"name":"columntypelist","type":"string","description":"","required":false}],"argMin":1}

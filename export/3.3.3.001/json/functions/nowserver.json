@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"deprecated","description":"this function is deprecated, returns the current time on the server independend on railo timezone definition","name":"nowserver","type":"java","argMax":-1,"returnType":"datetime"}

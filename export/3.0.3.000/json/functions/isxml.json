@@ -1,1 +1,0 @@
-{"name":"isxml","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Check if a String is a well-formed XML","arguments":[{"name":"value","type":"any","description":"","required":true}],"argMin":1}

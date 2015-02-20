@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"file","type":"any","description":"file path"}],"argMin":1,"returnType":"struct","status":"implemeted","name":"getfileinfo","type":"java","argumentType":"fixed","description":"Retrieves information about file."}

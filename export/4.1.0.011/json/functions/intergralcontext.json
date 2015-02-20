@@ -1,1 +1,0 @@
-{"returnType":"struct","status":"implemeted","arguments":[],"description":"return the integral context information, FusionDebug has do be installed for this.","argMax":-1,"name":"intergralcontext","argMin":0,"type":"java","argumentType":"fixed"}

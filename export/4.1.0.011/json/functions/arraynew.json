@@ -1,1 +1,0 @@
-{"returnType":"array","status":"implemeted","arguments":[{"status":"implemeted","description":"Number of dimensions in new array: 1, 2, or 3","name":"dimension","type":"number","required":false}],"description":"create a new array","argMax":-1,"name":"arraynew","argMin":0,"type":"java","argumentType":"fixed"}

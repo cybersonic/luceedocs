@@ -1,1 +1,0 @@
-{"name":"queryslice","argumentType":"fix","argMax":-1,"returnType":"query","description":"","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"offset","type":"number","description":"","required":true},{"name":"length","type":"number","description":"","required":false}],"argMin":2}

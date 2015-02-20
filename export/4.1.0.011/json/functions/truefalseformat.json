@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"a value that can be casted to a boolean","name":"value","type":"any","required":true}],"description":"True, for a non-zero value; False, otherwise.","argMax":-1,"name":"truefalseformat","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"name":"listfirst","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"list","type":"string","description":"","required":true},{"name":"delimiters","type":"string","description":"","required":false}],"argMin":1}

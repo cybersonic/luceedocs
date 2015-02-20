@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Object for which you perform the null check.","name":"object","type":"any","required":true}],"description":"Determines whether given object is null or not","argMax":-1,"name":"isnull","argMin":1,"type":"java","argumentType":"fixed"}

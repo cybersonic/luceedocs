@@ -1,1 +1,0 @@
-{"name":"imagesetantialiasing","argumentType":"fix","argMax":-1,"returnType":"void","description":"Switches antialiasing on or off in rendered graphics.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"antialias","type":"string","description":"","required":false}],"argMin":1}

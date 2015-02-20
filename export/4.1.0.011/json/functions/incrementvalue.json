@@ -1,1 +1,0 @@
-{"returnType":"number","status":"deprecated","arguments":[{"status":"implemeted","description":"Number to increment","name":"number","type":"number","required":true}],"description":"this function is deprecated, use instead the ++ operator;Increments the current number by one","argMax":-1,"name":"incrementvalue","argMin":1,"type":"java","argumentType":"fixed"}

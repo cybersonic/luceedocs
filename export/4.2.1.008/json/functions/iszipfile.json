@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["decision","zip"],"arguments":[{"required":true,"status":"implemeted","name":"path","type":"string","description":"path to the zip file","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"iszipfile","type":"java","argumentType":"fixed","description":"Verifies whether an zip file is valid."}

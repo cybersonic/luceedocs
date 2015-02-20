@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"A string","name":"string","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"Determines the value of a character.","name":"asc","type":"java","argMax":-1,"returnType":"number"}

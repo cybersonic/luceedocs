@@ -1,1 +1,0 @@
-{"name":"querycolumncount","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"query","type":"query","description":"","required":true}],"argMin":1}

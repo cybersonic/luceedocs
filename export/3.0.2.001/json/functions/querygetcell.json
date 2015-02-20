@@ -1,1 +1,0 @@
-{"name":"querygetcell","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"column_name","type":"string","description":"","required":true},{"name":"row_number","type":"number","description":"","required":false}],"argMin":2}

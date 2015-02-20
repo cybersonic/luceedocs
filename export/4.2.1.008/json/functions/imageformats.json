@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["image"],"arguments":[],"argMin":0,"returnType":"struct","status":"implemeted","name":"imageformats","type":"java","argumentType":"fixed","description":"return all available readers and writers"}

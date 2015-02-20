@@ -1,1 +1,0 @@
-{"name":"quotedvaluelist","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"query_column","type":"variable_string","description":"","required":true},{"name":"delimiter","type":"string","description":"","required":false}],"argMin":1}

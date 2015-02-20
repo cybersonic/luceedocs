@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"the hostname to check","name":"hostname","type":"string","required":false}],"argMin":0,"status":"implemeted","description":"checks if given IP is of IPV6 format","name":"isipv6","type":"java","argMax":-1,"returnType":"boolean"}

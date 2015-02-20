@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["decision"],"arguments":[{"required":true,"status":"implemeted","name":"obj","type":"any","description":"object to check","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isnotmap","type":"java","argumentType":"fixed","description":"return true if the given Object is not of Type java.util.Map"}

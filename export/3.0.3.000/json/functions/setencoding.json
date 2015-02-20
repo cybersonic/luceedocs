@@ -1,1 +1,0 @@
-{"name":"setencoding","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"scope","type":"string","description":"","required":true},{"name":"encoding","type":"string","description":"","required":true}],"argMin":2}

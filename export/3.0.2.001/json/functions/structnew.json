@@ -1,1 +1,0 @@
-{"name":"structnew","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"type","type":"string","description":"the type the new struct (normal,weak,linked)","required":false}],"argMin":0}

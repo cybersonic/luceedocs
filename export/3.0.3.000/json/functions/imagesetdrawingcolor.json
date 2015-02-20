@@ -1,1 +1,0 @@
-{"name":"imagesetdrawingcolor","argumentType":"fix","argMax":-1,"returnType":"void","description":"Sets the current drawing color for images. All subsequent graphics operations use the specified color.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"color","type":"string","description":"","required":true}],"argMin":2}

@@ -1,1 +1,0 @@
-{"name":"imagesetdrawingalpha","argumentType":"fix","argMax":-1,"returnType":"void","description":"Sets the current drawing alpha for images. All subsequent graphics operations use the specified alpha.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"alpha","type":"number","description":"","required":true}],"argMin":2}

@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"getcurrenttemplatepath","type":"java","argumentType":"fixed","description":"Gets the absolute path of the page that calls this function."}

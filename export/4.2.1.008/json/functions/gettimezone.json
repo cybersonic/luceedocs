@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"gettimezone","type":"java","argumentType":"fixed","description":"returns the timezone defined for the current request."}

@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Query variable","name":"value","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether value is a query.","name":"isquery","type":"java","argMax":-1,"returnType":"boolean"}

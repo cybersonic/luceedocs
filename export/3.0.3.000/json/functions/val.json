@@ -1,1 +1,0 @@
-{"name":"val","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"value","type":"any","description":"","required":true}],"argMin":1}

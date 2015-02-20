@@ -1,1 +1,0 @@
-{"name":"acos","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"number","type":"number","description":"","required":true}],"argMin":1}

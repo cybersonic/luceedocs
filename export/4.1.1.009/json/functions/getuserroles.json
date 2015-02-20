@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"getuserroles","type":"java","argumentType":"fixed","description":"Retrieves the list of roles for the current user."}

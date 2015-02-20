@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"A string or a variable that contains one.","name":"string","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether a string or Java object can be converted\n        to a date\/time value.","name":"isdate","type":"java","argMax":-1,"returnType":"boolean"}

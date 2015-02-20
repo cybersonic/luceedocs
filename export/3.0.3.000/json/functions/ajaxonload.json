@@ -1,1 +1,0 @@
-{"name":"ajaxonload","argumentType":"fix","argMax":-1,"returnType":"void","description":"","arguments":[{"name":"functionName","type":"string","description":"","required":true}],"argMin":1}

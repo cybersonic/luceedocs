@@ -1,1 +1,0 @@
-{"name":"getmetadata","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"arg1","type":"any","description":"","required":false},{"name":"source","type":"boolean","description":"return information of the source of the object","required":false}],"argMin":0}

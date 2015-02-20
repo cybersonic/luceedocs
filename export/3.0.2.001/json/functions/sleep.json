@@ -1,1 +1,0 @@
-{"name":"sleep","argumentType":"fix","argMax":-1,"returnType":"void","description":"","arguments":[{"name":"duration","type":"number","description":"","required":true}],"argMin":1}

@@ -1,1 +1,0 @@
-{"name":"componentinfo","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"component","type":"component","description":"","required":true}],"argMin":1}

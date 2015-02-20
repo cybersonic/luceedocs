@@ -1,1 +1,0 @@
-{"name":"arraycontains","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"haystack","type":"array","description":"","required":true},{"name":"needle","type":"string","description":"","required":true}],"argMin":2}

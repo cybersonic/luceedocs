@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"The value to be converted into an angle. Must be between -1 and 1.","name":"number","type":"number","required":true}],"description":"Returns the angle whose cosine is the value passed as the argument.","argMax":-1,"name":"acos","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Number to format","name":"number","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Converts a number to a decimal-formatted string.","name":"decimalformat","type":"java","argMax":-1,"returnType":"string"}

@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["decision"],"arguments":[{"required":true,"status":"implemeted","name":"object","type":"any","description":"The object that is checked.","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isclosure","type":"java","argumentType":"fixed","description":"checks if given Object is a closure or not."}

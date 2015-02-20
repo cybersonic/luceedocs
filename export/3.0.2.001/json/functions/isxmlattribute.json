@@ -1,1 +1,0 @@
-{"name":"isxmlattribute","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Check if a value is a XML Attribut (XML Attr Node)","arguments":[{"name":"value","type":"any","description":"","required":true}],"argMin":1}

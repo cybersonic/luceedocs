@@ -1,1 +1,0 @@
-{"name":"dotnettocftype","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"input","type":"any","description":"","required":true}],"argMin":1}

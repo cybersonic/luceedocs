@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"The algorithm to use to generate the random number.","name":"algorithm","type":"string","required":false}],"argMin":0,"status":"implemeted","description":"Generates a pseudo-random number in the range 0 - 1.","name":"rand","type":"java","argMax":-1,"returnType":"number"}

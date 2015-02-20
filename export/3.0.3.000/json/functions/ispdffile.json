@@ -1,1 +1,0 @@
-{"name":"ispdffile","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Verifies whether a PDF file is valid.","arguments":[{"name":"path","type":"string","description":"","required":true}],"argMin":1}

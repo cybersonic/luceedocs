@@ -1,1 +1,0 @@
-{"name":"imagegetwidth","argumentType":"fix","argMax":-1,"returnType":"number","description":"Retrieves the width of the image in pixels.","arguments":[{"name":"name","type":"any","description":"","required":true}],"argMin":1}

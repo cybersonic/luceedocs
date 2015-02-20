@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["image"],"arguments":[{"required":true,"status":"implemeted","name":"name","type":"any","description":"The image on which this operation is performed.","defaultValue":null}],"argMin":1,"returnType":"void","status":"implemeted","name":"imagegrayscale","type":"java","argumentType":"fixed","description":"Converts a image to grayscale."}

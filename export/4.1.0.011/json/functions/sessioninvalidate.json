@@ -1,1 +1,0 @@
-{"returnType":"void","status":"implemeted","arguments":[],"description":"Invalidates or cleans up the current session.","argMax":-1,"name":"sessioninvalidate","argMin":0,"type":"java","argumentType":"fixed"}

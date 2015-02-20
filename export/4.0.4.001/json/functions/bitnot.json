@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"a integer","name":"number","type":"number","required":true}],"argMin":1,"status":"implemeted","description":"Performs a bitwise logical NOT operation.","name":"bitnot","type":"java","argMax":-1,"returnType":"number"}

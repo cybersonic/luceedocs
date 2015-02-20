@@ -1,1 +1,0 @@
-{"returnType":"any","status":"implemeted","arguments":[],"description":"Gets the current PageContext (http:\/\/www.getrailo.org\/javadoc\/railo\/runtime\/PageContext.html) object that provides access to page attributes and configuration, request and response objects.","argMax":-1,"name":"getpagecontext","argMin":0,"type":"java","argumentType":"fixed"}

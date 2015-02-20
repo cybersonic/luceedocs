@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"A real number","name":"number","type":"number","required":true}],"argMin":1,"status":"implemeted","description":"Determines the closest integer that is greater than a\n        specified number.","name":"ceiling","type":"java","argMax":-1,"returnType":"number"}

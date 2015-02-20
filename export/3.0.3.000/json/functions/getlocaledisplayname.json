@@ -1,1 +1,0 @@
-{"name":"getlocaledisplayname","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"locale","type":"string","description":"","required":false},{"name":"dspLocale","type":"string","description":"","required":false}],"argMin":0}

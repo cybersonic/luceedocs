@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"url","type":"string","description":"Amazon S3 URL","defaultValue":null}],"argMin":1,"returnType":"Object","status":"implemeted","name":"storegetacl","type":"java","argumentType":"fixed","description":"returns an array of struct where each struct represents an ACL grant"}

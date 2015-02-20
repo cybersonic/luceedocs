@@ -1,1 +1,0 @@
-{"name":"ispdfobject","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Determines whether a value is a PDF object.","arguments":[{"name":"value","type":"any","description":"","required":true}],"argMin":1}

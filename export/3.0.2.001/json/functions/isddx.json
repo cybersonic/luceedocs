@@ -1,1 +1,0 @@
-{"name":"isddx","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"pathOrString","type":"string","description":"","required":true}],"argMin":1}

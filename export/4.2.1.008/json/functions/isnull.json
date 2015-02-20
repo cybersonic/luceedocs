@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["decision"],"arguments":[{"required":true,"status":"implemeted","name":"object","type":"any","description":"Object for which you perform the null check.","defaultValue":null}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isnull","type":"java","argumentType":"fixed","description":"Determines whether given object is null or not"}

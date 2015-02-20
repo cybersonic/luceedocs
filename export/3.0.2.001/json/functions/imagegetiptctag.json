@@ -1,1 +1,0 @@
-{"name":"imagegetiptctag","argumentType":"fix","argMax":-1,"returnType":"any","description":"Retrieves the value of the IPTC tag for a image.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"tagName","type":"string","description":"","required":true}],"argMin":2}

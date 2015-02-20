@@ -1,1 +1,0 @@
-{"returnType":"void","status":"implemeted","arguments":[],"description":"Closes the current ORM session.","argMax":-1,"name":"ormclosesession","argMin":0,"type":"java","argumentType":"fixed"}

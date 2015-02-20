@@ -1,1 +1,0 @@
-{"name":"javacast","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"type","type":"string","description":"","required":true},{"name":"variable","type":"any","description":"","required":true}],"argMin":2}

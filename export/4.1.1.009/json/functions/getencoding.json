@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"scope","type":"string","description":"one of the following\n- form\n- url"}],"argMin":1,"returnType":"string","status":"implemeted","name":"getencoding","type":"java","argumentType":"fixed","description":"Returns the encoding (character set) of the Form or URL scope."}

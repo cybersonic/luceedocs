@@ -1,1 +1,0 @@
-{"name":"decimalformat","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"number","type":"any","description":"","required":true}],"argMin":1}

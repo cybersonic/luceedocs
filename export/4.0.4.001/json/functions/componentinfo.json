@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"component to return info for it","name":"component","type":"component","required":true}],"argMin":1,"status":"deprecated","description":"this function is deprecated, use function getMetadata instead.","name":"componentinfo","type":"java","argMax":-1,"returnType":"struct"}

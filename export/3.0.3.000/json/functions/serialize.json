@@ -1,1 +1,0 @@
-{"name":"serialize","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"object","type":"any","description":"","required":true}],"argMin":1}

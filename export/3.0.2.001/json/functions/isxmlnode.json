@@ -1,1 +1,0 @@
-{"name":"isxmlnode","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Check if a value is a XML Node","arguments":[{"name":"value","type":"any","description":"","required":true}],"argMin":1}

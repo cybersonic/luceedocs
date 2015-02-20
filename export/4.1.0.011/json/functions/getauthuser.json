@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[],"description":"Gets the name of an authenticated user.","argMax":-1,"name":"getauthuser","argMin":0,"type":"java","argumentType":"fixed"}

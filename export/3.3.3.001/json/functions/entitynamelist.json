@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"delimter used for the list","name":"delimeter","type":"string","required":false}],"argMin":0,"status":"implemeted","description":"return all loaded entities as string list","name":"entitynamelist","type":"java","argMax":-1,"returnType":"string"}

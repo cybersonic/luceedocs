@@ -1,1 +1,0 @@
-{"name":"insert","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"substring","type":"string","description":"","required":true},{"name":"string","type":"string","description":"","required":true},{"name":"position","type":"number","description":"","required":true}],"argMin":3}

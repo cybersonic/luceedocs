@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"filepath","type":"object","description":"file path","defaultValue":null}],"argMin":1,"returnType":"numeric","status":"implemeted","name":"gettotalspace","type":"java","argumentType":"fixed","description":"Returns the size of the partition named by this abstract pathname."}

@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"object to check","name":"obj","type":"any","required":true}],"description":"return true if the given Object is not of Type java.util.Map","argMax":-1,"name":"isnotmap","argMin":1,"type":"java","argumentType":"fixed"}

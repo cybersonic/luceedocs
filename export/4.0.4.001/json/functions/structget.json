@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Pathname of variable that contains structure or array from which Railo retrieves structure.","name":"PathDesired","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"Gets a structure(s) from a specified path.","name":"structget","type":"java","argMax":-1,"returnType":"any"}

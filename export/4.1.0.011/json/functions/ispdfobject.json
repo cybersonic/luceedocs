@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"A value, typically the PDF object stored as a variable name.","name":"value","type":"any","required":true}],"description":"Determines whether a value is a PDF object.","argMax":-1,"name":"ispdfobject","argMin":1,"type":"java","argumentType":"fixed"}

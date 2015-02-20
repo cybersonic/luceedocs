@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"authenticate","nameSpace":"cf","attributes":{},"bodyType":"prohibited","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Authenticates a user, setting a security context for the application. \n\t\t\tFor more information, see the descriptions of IsAuthenticated and AuthenticatedContext.","attributeType":"fix","parseBody":false}

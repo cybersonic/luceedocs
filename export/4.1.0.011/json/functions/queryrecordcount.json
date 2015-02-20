@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"","name":"query","type":"query","required":true}],"description":"row count of given query","argMax":-1,"name":"queryrecordcount","argMin":1,"type":"java","argumentType":"fixed"}

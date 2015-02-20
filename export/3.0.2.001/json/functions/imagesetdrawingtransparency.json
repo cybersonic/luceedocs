@@ -1,1 +1,0 @@
-{"name":"imagesetdrawingtransparency","argumentType":"fix","argMax":-1,"returnType":"void","description":"Specifies the degree of transparency of drawing functions.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"percent","type":"number","description":"","required":false}],"argMin":1}

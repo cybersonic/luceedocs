@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"","name":"string","type":"string","required":true}],"description":"returns the len of a string","argMax":-1,"name":"stringlen","argMin":1,"type":"java","argumentType":"fixed"}

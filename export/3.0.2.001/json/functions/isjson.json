@@ -1,1 +1,0 @@
-{"name":"isjson","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Evaluates whether a string is in valid JSON (JavaScript Object Notation) data interchange format","arguments":[{"name":"var","type":"any","description":"","required":true}],"argMin":1}

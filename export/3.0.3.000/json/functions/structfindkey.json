@@ -1,1 +1,0 @@
-{"name":"structfindkey","argumentType":"fix","argMax":-1,"returnType":"array","description":"","arguments":[{"name":"Top","type":"struct","description":"","required":true},{"name":"Key","type":"string","description":"","required":true},{"name":"Scope","type":"string","description":"","required":false}],"argMin":2}

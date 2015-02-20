@@ -1,1 +1,0 @@
-{"returnType":"array","status":"implemeted","arguments":[],"description":"returns a array containing the Java classpath of the current enviroment.","argMax":-1,"name":"getclasspath","argMin":0,"type":"java","argumentType":"fixed"}

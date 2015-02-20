@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Structure to test","name":"structure","type":"struct","required":true}],"description":"Determines whether a structure contains data.","argMax":-1,"name":"structisempty","argMin":1,"member":{"chaining":false,"name":"isEmpty","type":"struct"},"type":"java","argumentType":"fixed"}

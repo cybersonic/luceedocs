@@ -1,1 +1,0 @@
-{"argMax":-1,"keywords":["decision"],"arguments":[],"argMin":0,"returnType":"boolean","status":"implemeted","name":"isdebugmode","type":"java","argumentType":"fixed","description":"Determines whether debugging output is enabled."}

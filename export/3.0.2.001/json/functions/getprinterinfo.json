@@ -1,1 +1,0 @@
-{"name":"getprinterinfo","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"printer","type":"string","description":"The name of a printer","required":true}],"argMin":1}

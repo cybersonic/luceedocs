@@ -1,1 +1,0 @@
-{"name":"monthshortasstring","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"monthnumber","type":"number","description":"","required":true}],"argMin":1}

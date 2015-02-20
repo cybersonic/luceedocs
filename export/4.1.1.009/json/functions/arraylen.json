@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"array","type":"array","description":"Name of an array"}],"argMin":1,"returnType":"number","status":"implemeted","name":"arraylen","type":"java","argumentType":"fixed","description":"Returns the length of the array","member":{"chaining":false,"name":"len","type":"array"}}

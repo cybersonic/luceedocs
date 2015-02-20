@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"the timezone to be set.","name":"timezone","type":"string","required":true}],"description":"change the timezone defintion for the current request.","argMax":-1,"name":"settimezone","argMin":1,"type":"java","argumentType":"fixed"}

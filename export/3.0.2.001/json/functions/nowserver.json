@@ -1,1 +1,0 @@
-{"name":"nowserver","argumentType":"fix","argMax":-1,"returnType":"datetime","description":"returns the actuell time on the server independend on railo timezone definition","arguments":[],"argMin":0}

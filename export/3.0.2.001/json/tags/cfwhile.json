@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"while","nameSpace":"cf","attributes":{"condition":{"type":"boolean","description":"Contition o the expression","required":false}},"bodyType":"required","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"same like loop-contition but easier to use","attributeType":"noname","parseBody":false}

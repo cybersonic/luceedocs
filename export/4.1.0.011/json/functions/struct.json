@@ -1,1 +1,0 @@
-{"returnType":"struct","status":"implemeted","arguments":[],"description":"used to create and populate a struct at the same time, example struct(key1:1,key2:2)","argMax":-1,"name":"struct","argMin":0,"type":"java","argumentType":"dynamic"}

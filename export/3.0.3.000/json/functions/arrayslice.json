@@ -1,1 +1,0 @@
-{"name":"arrayslice","argumentType":"fix","argMax":-1,"returnType":"array","description":"","arguments":[{"name":"array","type":"array","description":"","required":true},{"name":"offset","type":"number","description":"","required":true},{"name":"length","type":"number","description":"","required":false}],"argMin":2}

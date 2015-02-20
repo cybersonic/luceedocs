@@ -1,1 +1,0 @@
-{"name":"getexception","argumentType":"fix","argMax":-1,"returnType":"throwable","description":"","arguments":[{"name":"object","type":"any","description":"","required":true}],"argMin":1}

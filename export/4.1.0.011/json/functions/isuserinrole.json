@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Name of a security role","name":"role_name","type":"any","required":true}],"description":"Determines whether an authenticated user belongs to the\n        specified Role.","argMax":-1,"name":"isuserinrole","argMin":1,"type":"java","argumentType":"fixed"}

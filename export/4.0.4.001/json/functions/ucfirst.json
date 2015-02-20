@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"","name":"string","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"does the first character of the given string upper case.","name":"ucfirst","type":"java","argMax":-1,"returnType":"string"}

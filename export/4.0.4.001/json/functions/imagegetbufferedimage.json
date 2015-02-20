@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"The image on which this operation is performed.","name":"name","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Returns the java.awt.BufferedImage object underlying the current image.","name":"imagegetbufferedimage","type":"java","argMax":-1,"returnType":"any"}

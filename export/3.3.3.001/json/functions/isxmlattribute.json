@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Name of an XML attribute","name":"value","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether the function parameter is an\n        XML Document Object Model (DOM) attribute node.","name":"isxmlattribute","type":"java","argMax":-1,"returnType":"boolean"}

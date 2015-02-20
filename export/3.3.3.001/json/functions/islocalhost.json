@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Valid IP address.","name":"ip","type":"String","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether the specified IP address is the localhost.","name":"islocalhost","type":"java","argMax":-1,"returnType":"boolean"}

@@ -1,1 +1,0 @@
-{"name":"filesetaccessmode","argumentType":"fix","argMax":-1,"returnType":"void","description":"","arguments":[{"name":"source","type":"any","description":"","required":true},{"name":"mode","type":"string","description":"","required":true}],"argMin":2}

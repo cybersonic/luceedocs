@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"The variable that is checked.","name":"name","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether a variable returns a image.","name":"isimage","type":"java","argMax":-1,"returnType":"boolean"}

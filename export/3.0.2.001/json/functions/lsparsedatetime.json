@@ -1,1 +1,0 @@
-{"name":"lsparsedatetime","argumentType":"fix","argMax":-1,"returnType":"datetime","description":"","arguments":[{"name":"dateString","type":"string","description":"","required":true},{"name":"locale","type":"string","description":"","required":false}],"argMin":1}

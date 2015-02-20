@@ -1,1 +1,0 @@
-{"name":"arrayresize","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"array","type":"array","description":"","required":true},{"name":"minimum_size","type":"number","description":"","required":true}],"argMin":2}

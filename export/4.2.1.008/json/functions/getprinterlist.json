@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":false,"status":"implemeted","name":"delimiters","type":"string","description":"Characters that separate list elements. The default value is comma.","defaultValue":","}],"argMin":0,"returnType":"string","status":"implemeted","name":"getprinterlist","type":"java","argumentType":"fixed","description":"Gets a string list of available printers."}

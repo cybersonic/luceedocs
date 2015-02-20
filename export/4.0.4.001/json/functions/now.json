@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Returns the current date and time","name":"now","type":"java","argMax":-1,"returnType":"datetime"}

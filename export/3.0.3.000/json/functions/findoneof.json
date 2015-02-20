@@ -1,1 +1,0 @@
-{"name":"findoneof","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"set","type":"string","description":"","required":true},{"name":"string","type":"string","description":"","required":true},{"name":"start","type":"number","description":"","required":false}],"argMin":2}

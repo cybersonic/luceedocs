@@ -1,1 +1,0 @@
-{"name":"islocalhost","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"ip","type":"String","description":"","required":true}],"argMin":1}

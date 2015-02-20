@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Determines whether a user is logged in.","name":"isuserloggedin","type":"java","argMax":-1,"returnType":"boolean"}

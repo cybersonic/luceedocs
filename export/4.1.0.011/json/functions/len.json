@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"the length of a string","name":"value","type":"string","required":true}],"description":"Determines the length of a string or binary object","argMax":-1,"name":"len","argMin":1,"type":"java","argumentType":"fixed"}

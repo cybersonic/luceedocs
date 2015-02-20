@@ -1,1 +1,0 @@
-{"name":"isimage","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Determines whether a variable returns a ColdFusion image.","arguments":[{"name":"name","type":"any","description":"","required":true}],"argMin":1}

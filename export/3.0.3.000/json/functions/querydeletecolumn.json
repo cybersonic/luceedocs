@@ -1,1 +1,0 @@
-{"name":"querydeletecolumn","argumentType":"fix","argMax":-1,"returnType":"array","description":"removes a row from a query and return removed row as array","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"column","type":"String","description":"","required":true}],"argMin":2}

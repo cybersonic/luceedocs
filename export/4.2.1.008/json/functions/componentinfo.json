@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"component","type":"component","description":"component to return info for it","defaultValue":null}],"argMin":1,"returnType":"struct","status":"deprecated","name":"componentinfo","type":"java","argumentType":"fixed","description":"this function is deprecated, use function getMetadata instead."}

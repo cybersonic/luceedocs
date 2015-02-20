@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"string","type":"string","description":"A string or a variable that contains one"}],"argMin":1,"returnType":"string","status":"implemeted","name":"lcase","type":"java","argumentType":"fixed","description":"Converts the alphabetic characters in a string to lowercase."}

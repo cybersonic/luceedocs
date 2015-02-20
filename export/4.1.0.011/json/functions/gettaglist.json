@@ -1,1 +1,0 @@
-{"returnType":"struct","status":"implemeted","arguments":[],"description":"returns information to a tag as struct","argMax":-1,"name":"gettaglist","argMin":0,"type":"java","argumentType":"fixed"}

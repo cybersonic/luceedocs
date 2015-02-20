@@ -1,1 +1,0 @@
-{"name":"cjustify","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"string","type":"string","description":"","required":true},{"name":"length","type":"number","description":"","required":true}],"argMin":2}

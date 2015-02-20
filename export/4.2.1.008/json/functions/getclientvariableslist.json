@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"getclientvariableslist","type":"java","argumentType":"fixed","description":"Finds the client variables to which a page has write access.\n        Comma-delimited list of non-read-only client variables"}

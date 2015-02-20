@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"A number","name":"number","type":"number","required":true}],"description":"Converts a real number to an integer.","argMax":-1,"name":"fix","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"","name":"query_column","type":"variable_string","required":true}],"argMin":1,"status":"implemeted","description":"Returns a array of all the values, for a given column within the query.","name":"valuearray","type":"java","argMax":-1,"returnType":"array"}

@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"","name":"query","type":"query","required":true}],"description":"column count of given query","argMax":-1,"name":"querycolumncount","argMin":1,"member":{"chaining":false,"name":"columnCount","type":"query"},"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"name":"structkeylist","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"structure","type":"struct","description":"","required":true},{"name":"delimiter","type":"string","description":"","required":false}],"argMin":1}

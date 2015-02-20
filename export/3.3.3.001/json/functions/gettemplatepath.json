@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"This function is deprecated.\n        \n        Use the GetBaseTemplatePath function instead.","name":"gettemplatepath","type":"java","argMax":-1,"returnType":"any"}

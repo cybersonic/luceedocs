@@ -1,1 +1,0 @@
-{"name":"getfileinfo","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"file","type":"any","description":"","required":true}],"argMin":1}

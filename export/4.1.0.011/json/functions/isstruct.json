@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Variable name","name":"variable","type":"any","required":true}],"description":"Determines if the object is a structure","argMax":-1,"name":"isstruct","argMin":1,"type":"java","argumentType":"fixed"}

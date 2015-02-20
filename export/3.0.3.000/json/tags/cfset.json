@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"set","nameSpace":"cf","attributes":{"noname":{"type":"any","description":"Content of the tag set","required":false}},"bodyType":"prohibited","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Define a ColdFusion variable. If the variable exists, cfset resets it to the specified value.","attributeType":"noname","parseBody":false}

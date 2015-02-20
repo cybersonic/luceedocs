@@ -1,1 +1,0 @@
-{"name":"bitxor","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"number1","type":"number","description":"","required":true},{"name":"number2","type":"number","description":"","required":true}],"argMin":2}
