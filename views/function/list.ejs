@@ -17,7 +17,7 @@ for(t in functions){
 <section id="tags">
     <div class="page-header">
         <h2>Functions</h2>
-        <p class="lead">Railo Server provides you with a huge number of functions, nearly 600 of them in fact! You can use Functions simply to get access to the core functionality to modify code as well as accessing external systems
+        <p class="lead">Lucee Server provides you with a huge number of functions, nearly 600 of them in fact! You can use Functions simply to get access to the core functionality to modify code as well as accessing external systems
         </p>
 
 
@@ -26,10 +26,10 @@ for(t in functions){
 
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="pagination alphabet">
+                    <ul class="nav nav-justified">
                         <% for(initial in AtoZ) { %>
 
-                        <li><a href="<%= "#" + initial %>"><%= initial %></a></li>
+                        <li class="btn btn-default btn-xs"><a href="<%= "#" + initial %>"><%= initial %></a></li>
 
                         <% } %>
 
@@ -48,12 +48,11 @@ for(t in functions){
             <div class="row">
                 <% for(initial in AtoZ) { %>
 
-
                 <div class="col-sm-4" id="<%= initial %>">
                     <h4><%= initial.toUpperCase() %></h4>
                     <cfset items = list.getItemsInGroup(al)>
 
-                        <ul>
+                        <ul class="list list-unstyled">
                             <% for(t in AtoZ[initial]) {%>
                             <% var tag = AtoZ[initial][t]%>
                             <li>

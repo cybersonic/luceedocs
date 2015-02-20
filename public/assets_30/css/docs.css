@@ -13,22 +13,19 @@ body {
 	line-height: .75;
 }
 .navbar-brand {
-	background: url("/images/railo_logo.png") no-repeat right center;
+	background: url("/images/lucee_logo.png") 10px 5px no-repeat;
 	text-indent: -3000px;
-	width: 120px;
+	width: 140px;
+	min-height: 65px;
 }
 .jumbotron{
-	background-image: url(/images/orange_background.jpg);
-	background-repeat: repeat-x;
-	background-position: 10px;
+	background: #01798a;
 	color: white;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 .jumbotron{
-	background-image: url(/images/orange_background.jpg);
-	background-repeat: repeat-x;
-	background-position: 10px;
+	background: #01798a;
 	color: white;
 	padding-top: 20px;
 	padding-bottom: 20px;

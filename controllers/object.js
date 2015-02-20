@@ -12,7 +12,7 @@ exports.listObjects = function(req, res){
         return;
     }
 
-    res.locals.title = "Railo Object Member Functions Documentation";
+    res.locals.title = "Lucee Object Member Functions Documentation";
     res.render('object/list', {objects:objects});
 
 };
@@ -32,7 +32,7 @@ exports.getObject = function(req, res){
         res.json(functionData);
         return;
     }
-    res.locals.title = "Railo " + type.capitalize() + "."+ func + "() Function Documentation";
+    res.locals.title = "Lucee " + type.capitalize() + "."+ func + "() Function Documentation";
 
 
     res.render('object/view', {

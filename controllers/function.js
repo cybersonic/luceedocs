@@ -15,7 +15,7 @@ exports.list = function(req, res){
 		res.json(functions);
 		return;
 	}
-	res.locals.title = "Railo Functions Documentation";
+	res.locals.title = "Lucee Functions Documentation";
 	res.render('function/list', {functions:functions});
 
 };
@@ -34,7 +34,7 @@ exports.get = function(req, res){
 		res.json(functionData);
 		return;
 	}
-	res.locals.title = "Railo " + id.capitalize() + " Function Documentation";
+	res.locals.title = "Lucee " + id.capitalize() + " Function Documentation";
 	res.render('function/view', {
 		func : functionData,
 		version: currentversion,
