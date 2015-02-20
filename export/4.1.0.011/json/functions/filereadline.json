@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"The file object","name":"fileObj","type":"any","required":true}],"description":"Reads a line from an file.","argMax":-1,"name":"filereadline","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"name":"binarydecode","argumentType":"fix","argMax":-1,"returnType":"binary","description":"Decodes Binary Data that are encoded as String","arguments":[{"name":"encoded_binary","type":"string","description":"","required":true},{"name":"binaryencoding","type":"string","description":"","required":true}],"argMin":2}

@@ -1,1 +1,0 @@
-{"name":"getgatewayhelper","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"gatewayID","type":"string","description":"","required":true}],"argMin":1}

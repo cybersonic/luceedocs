@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Structure to clear","name":"structure","type":"struct","required":true}],"description":"Removes all data from a structure.","argMax":-1,"name":"structclear","argMin":1,"member":{"chaining":true,"name":"clear","type":"struct"},"type":"java","argumentType":"fixed"}

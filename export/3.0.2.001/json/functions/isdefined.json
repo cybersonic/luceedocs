@@ -1,1 +1,0 @@
-{"name":"isdefined","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"\"variable\"","type":"string","description":"","required":true}],"argMin":1}

@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"objectcache","nameSpace":"cf","attributes":{"action":{"type":"string","description":"Clears queries from the cache in the Application scope.","required":true}},"bodyType":"prohibited","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Flushes the query cache","attributeType":"fix","parseBody":true}

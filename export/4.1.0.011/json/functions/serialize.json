@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"","name":"object","type":"any","required":true}],"description":"opposite of evaluate, this function serialize all cfml object and all serializble Java objects. can also serilize Components.","argMax":-1,"name":"serialize","argMin":1,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Number to round","name":"number","type":"number","required":true}],"argMin":1,"status":"implemeted","description":"Rounds a number to the closest integer.","name":"round","type":"java","argMax":-1,"returnType":"number"}

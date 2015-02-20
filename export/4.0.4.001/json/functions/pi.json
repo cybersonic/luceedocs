@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Gets the mathematical constant p, accurate to 15 digits.\n        The number 3.14159265358979.","name":"pi","type":"java","argMax":-1,"returnType":"number"}

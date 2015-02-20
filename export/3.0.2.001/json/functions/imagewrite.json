@@ -1,1 +1,0 @@
-{"name":"imagewrite","argumentType":"fix","argMax":-1,"returnType":"void","description":"Writes a image to the specified filename or destination.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"destination","type":"string","description":"","required":false},{"name":"quality","type":"number","description":"","required":false}],"argMin":1}

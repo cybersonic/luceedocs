@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":false,"status":"implemeted","name":"caseSensitive","type":"boolean","description":"Determines how Railo processes the case of XML document object component identifiers:"}],"argMin":0,"returnType":"xml","status":"implemeted","name":"xmlnew","type":"java","argumentType":"fixed","description":"Creates an XML document object."}

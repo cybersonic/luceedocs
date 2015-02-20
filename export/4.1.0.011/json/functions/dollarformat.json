@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"Number to format","name":"number","type":"string","required":true}],"description":"Formats a string in U.S. format. (For other currencies, use\n        LSCurrencyFormat or LSEuroCurrencyFormat.)","argMax":-1,"name":"dollarformat","argMin":1,"type":"java","argumentType":"fixed"}

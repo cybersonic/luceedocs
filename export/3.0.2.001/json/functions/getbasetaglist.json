@@ -1,1 +1,0 @@
-{"name":"getbasetaglist","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"delimeter","type":"string","description":"","required":false}],"argMin":0}

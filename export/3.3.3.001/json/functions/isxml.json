@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"A string containing the XML document text","name":"value","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether a string is well-formed XML text.","name":"isxml","type":"java","argMax":-1,"returnType":"boolean"}

@@ -1,1 +1,0 @@
-{"name":"systemoutput","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"str","type":"string","description":"","required":true},{"name":"addNewLine","type":"boolean","description":"","required":false}],"argMin":1}

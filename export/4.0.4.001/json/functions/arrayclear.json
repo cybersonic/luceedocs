@@ -1,1 +1,0 @@
-{"member":{"name":"clear","chaining":true,"type":"array"},"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Name of an array","name":"array","type":"array","required":true}],"argMin":1,"status":"implemeted","description":"Removes all elements from an array.","name":"arrayclear","type":"java","argMax":-1,"returnType":"boolean"}

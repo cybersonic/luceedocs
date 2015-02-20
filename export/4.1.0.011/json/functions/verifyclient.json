@@ -1,1 +1,0 @@
-{"returnType":"void","status":"implemeted","arguments":[],"description":"Verifies whether request is from valid client or not","argMax":-1,"name":"verifyclient","argMin":0,"type":"java","argumentType":"fixed"}

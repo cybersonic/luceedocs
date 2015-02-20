@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"","name":"monthnumber","type":"number","required":true}],"description":"Returns the string label for the given month in short format","argMax":-1,"name":"monthshortasstring","argMin":1,"type":"java","argumentType":"fixed"}

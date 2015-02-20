@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"file to delete.","name":"source","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Deletes the specified file on the server.","name":"filedelete","type":"java","argMax":-1,"returnType":"void"}

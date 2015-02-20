@@ -1,1 +1,0 @@
-{"name":"fileopen","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"path","type":"string","description":"","required":true},{"name":"mode","type":"string","description":"","required":false},{"name":"charset","type":"string","description":"","required":false}],"argMin":1}

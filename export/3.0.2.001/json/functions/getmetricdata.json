@@ -1,1 +1,0 @@
-{"name":"getmetricdata","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"monitor_name","type":"string","description":"","required":true}],"argMin":1}

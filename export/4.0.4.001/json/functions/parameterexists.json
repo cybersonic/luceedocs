@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"","name":"parameter","type":"variablestring","required":true}],"argMin":1,"status":"implemeted","description":"Determines if the parameter exists","name":"parameterexists","type":"java","argMax":-1,"returnType":"boolean"}

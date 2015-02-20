@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Variable or expression","name":"value","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines if the object represents a simple value like a string, number, boolean etc","name":"issimplevalue","type":"java","argMax":-1,"returnType":"boolean"}

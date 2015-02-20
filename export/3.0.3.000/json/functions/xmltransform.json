@@ -1,1 +1,0 @@
-{"name":"xmltransform","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"xmlObj","type":"any","description":"","required":true},{"name":"xslString","type":"string","description":"","required":true},{"name":"parameters","type":"array","description":"","required":false}],"argMin":2}

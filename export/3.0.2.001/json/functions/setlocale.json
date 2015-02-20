@@ -1,1 +1,0 @@
-{"name":"setlocale","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"new_locale","type":"string","description":"","required":true}],"argMin":1}

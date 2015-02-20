@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"forward","nameSpace":"cf","attributes":{"template":{"type":"string","description":"template path to forward to","required":true}},"bodyType":"prohibited","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"forward the request to a other path.","attributeType":"fix","parseBody":false}

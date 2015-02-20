@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"b64str","type":"string","description":"a variable or Base64 string."}],"argMin":1,"returnType":"any","status":"implemeted","name":"imagereadbase64","type":"java","argumentType":"fixed","description":"Creates a image from a Base64 string."}

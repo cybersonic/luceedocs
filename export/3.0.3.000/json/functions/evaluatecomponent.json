@@ -1,1 +1,0 @@
-{"name":"evaluatecomponent","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"name","type":"string","description":"","required":true},{"name":"md5","type":"string","description":"","required":true},{"name":"members","type":"struct","description":"","required":true}],"argMin":3}

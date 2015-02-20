@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"A string or a variable that contains one.","name":"string","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines if the object represents a numeric","name":"isnumeric","type":"java","argMax":-1,"returnType":"boolean"}

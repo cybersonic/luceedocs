@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Number representing a year","name":"year","type":"number","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether a year is a leap year.","name":"isleapyear","type":"java","argMax":-1,"returnType":"boolean"}

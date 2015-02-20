@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"The file to close.","name":"fileObj","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Closes an file that is open.","name":"fileclose","type":"java","argMax":-1,"returnType":"void"}

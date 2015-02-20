@@ -1,1 +1,0 @@
-{"name":"inc","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"varName","type":"variable_string","description":"","required":true},{"name":"returnNewValue","type":"boolean","description":"","required":false}],"argMin":1}

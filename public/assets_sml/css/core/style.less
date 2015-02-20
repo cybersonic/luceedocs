@@ -1,0 +1,213 @@
+// This is the style guide less file
+html {
+  	-webkit-text-size-adjust: none;
+}
+
+body {
+	font-family: @base-font;
+	font-size: 15px;
+	font-weight: 400;
+	color: @base-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: @base-white;
+}
+
+a {
+	color: @link-color;
+	&:hover {
+		text-decoration: underline;
+		color: @link-hover;
+	}
+	&:focus {
+		text-decoration: none;
+		outline: none;		
+		color: @link-hover;
+	}
+}
+
+code {
+	// color: @code-color;
+	// background: @code-bg;
+	padding: 2px 9px;
+	.border-radius();
+}
+
+p {
+    // margin: 0 0 10px;
+    margin: 0 0 25px;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 22px;
+
+    @media @md {
+    	font-size: 18px;
+    }
+    @media @sm {
+    	font-size: 16px;
+    }
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @heading-font;
+	font-weight: 600;
+    margin-top: 0;
+	margin-bottom: 25px;
+}
+
+h1 {
+	font-size: 30px;
+	// text-transform: uppercase;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+strong {
+	font-weight: 600;
+}
+
+
+
+.intro-text {
+    font-size: 1.200em;
+    line-height: 1.6;
+	margin-bottom: 18px;
+	// color: @intro-text;
+}
+
+.line-break {
+    // border-top: 1px solid @line-break;
+	margin-top: 23px;
+	margin-bottom: 16px;
+    width: 100%;
+	clear: both;
+	&.dotted {
+		border-top-style: dotted;
+	}
+}
+
+.line-bold {
+    .line-break;
+    // border-top: 3px solid @line-break-bold;
+}
+
+// Button class
+.btn {
+	.button();
+	.border-radius();
+
+	&:focus {
+		color: @base-white;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn-large {
+	@media @md-min {
+		font-size: 25px;
+		line-height: 35px;
+		font-weight: 700;
+	}
+
+}
+
+.btn-wide {
+	width: 355px;
+	max-width: 100%;
+}
+
+.btn-download {
+	background: @btn-dl;
+	width: 355px;
+	max-width: 100%;
+
+	&:after {
+		.sprite-icon( 15px, 18px, -2px -2px );
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+}
+
+
+
+
+// Blockquote
+blockquote {
+	// background-color: @grey-light;
+	border: none;
+	padding: 13px 18px 18px;
+	position: relative;
+	font-size: 1.200em;
+	p {
+		margin-bottom: 10px;
+		font-weight: 300;
+	}
+	.author {
+		font-size: 0.722em;
+		font-style: normal;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+}
+ 
+
+.well {
+	font-size: 1em;
+ 	// padding-bottom: 9px;
+ 	border: none;
+	// p {
+	// 	margin-bottom: 10px;
+	// }
+} 
+
+
+@media print {
+    * {
+        box-shadow:none !important;
+        text-shadow: none !important;
+        -ms-filter: none !important;
+        filter:none !important;
+    } /* Black prints faster: h5bp.com/s */
+
+    input,
+    textarea,
+    select {
+    	page-break-inside: avoid;
+    }
+
+    a,
+    a:visited { text-decoration: underline; }
+    a[href]:after { content: ""; }
+    abbr[title]:after { content: ""; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead { display: table-header-group; } /* h5bp.com/t */
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}

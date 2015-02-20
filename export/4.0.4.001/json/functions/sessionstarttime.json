@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Provides information about the time when the current users session scope was created.","name":"sessionstarttime","type":"java","argMax":-1,"returnType":"date"}

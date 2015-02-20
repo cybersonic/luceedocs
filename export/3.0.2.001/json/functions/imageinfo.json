@@ -1,1 +1,0 @@
-{"name":"imageinfo","argumentType":"fix","argMax":-1,"returnType":"struct","description":"Returns a structure that contains information about the image, such as height, width, color model, size, and filename.","arguments":[{"name":"name","type":"any","description":"","required":true}],"argMin":1}

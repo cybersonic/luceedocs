@@ -1,1 +1,0 @@
-{"name":"listindexexists","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"list","type":"string","description":"","required":true},{"name":"index","type":"number","description":"","required":true},{"name":"delimeter","type":"string","description":"","required":false}],"argMin":2}

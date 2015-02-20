@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"break","nameSpace":"cf","attributes":{},"bodyType":"prohibited","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Used to break out of a cfloop,cfwhile or cfforeach.","attributeType":"fix","parseBody":false}

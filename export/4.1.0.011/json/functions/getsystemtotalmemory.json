@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[],"description":"The amount of memory that is available to the operating system, in bytes.","argMax":-1,"name":"getsystemtotalmemory","argMin":0,"type":"java","argumentType":"fixed"}

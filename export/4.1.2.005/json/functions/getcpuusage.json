@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":false,"status":"implemeted","name":"time","type":"number","description":"time range for a certain range."}],"argMin":0,"returnType":"number","status":"implemeted","name":"getcpuusage","type":"java","argumentType":"fixed","description":"returns the CPU usage for a defined time range (default: 1000ms)."}

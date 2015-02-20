@@ -1,0 +1,42 @@
+
+body {
+    position: relative;
+    padding-top: 60px;
+	font: 14px/1.6 "Open Sans",sans-serif;
+}
+
+#description .description {
+	position: relative;
+	top: -5px;
+	font: 100 4.2em "Helvetica Neue","Open Sans",sans-serif;
+	color: #aeaeae;
+	line-height: .75;
+}
+.navbar-brand {
+	background: url("/images/lucee_logo.png") no-repeat right center;
+	text-indent: -3000px;
+	width: 120px;
+}
+.jumbotron{
+	background-image: url(/images/orange_background.jpg);
+	background-repeat: repeat-x;
+	background-position: 10px;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.jumbotron{
+	background-image: url(/images/orange_background.jpg);
+	background-repeat: repeat-x;
+	background-position: 10px;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.footer {
+	background-color: #f5f5f5;
+}
+
+.alphabet.affix {
+	top:30px;
+}

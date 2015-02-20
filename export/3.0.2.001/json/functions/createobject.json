@@ -1,1 +1,0 @@
-{"name":"createobject","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"arg1","type":"string","description":"","required":true},{"name":"arg2","type":"string","description":"","required":true},{"name":"arg3","type":"string","description":"","required":false},{"name":"arg4","type":"string","description":"","required":false}],"argMin":2}

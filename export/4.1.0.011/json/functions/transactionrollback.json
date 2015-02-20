@@ -1,1 +1,0 @@
-{"status":"implemeted","returnType":"void","arguments":[],"description":"rolls back a pending transaction","source":"C:\\Users\\mark.drew\\Desktop\\railos\\railo-express-4.1.0.011-nojre\\lib\\ext\\railo-server\\context\\library\\function\\transactionRollback.cfm","argMax":0,"name":"transactionrollback","argMin":0,"type":"cfml","argumentType":"fixed"}

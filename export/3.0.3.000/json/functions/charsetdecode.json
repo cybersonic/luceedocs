@@ -1,1 +1,0 @@
-{"name":"charsetdecode","argumentType":"fix","argMax":-1,"returnType":"binary","description":"Decodes a String to a binary","arguments":[{"name":"encoded_binary","type":"string","description":"","required":true},{"name":"encoding","type":"string","description":"","required":true}],"argMin":2}

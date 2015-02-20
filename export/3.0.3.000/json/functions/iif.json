@@ -1,1 +1,0 @@
-{"name":"iif","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"condition","type":"boolean","description":"","required":true},{"name":"string_expression1","type":"string","description":"","required":true},{"name":"string_expression2","type":"string","description":"","required":true}],"argMin":3}

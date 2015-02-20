@@ -1,1 +1,0 @@
-{"name":"filewrite","argumentType":"fix","argMax":-1,"returnType":"void","description":"","arguments":[{"name":"file","type":"any","description":"","required":true},{"name":"data","type":"any","description":"","required":true},{"name":"charset","type":"string","description":"","required":false}],"argMin":2}

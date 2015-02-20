@@ -1,1 +1,0 @@
-{"name":"soundex","argumentType":"fix","argMax":-1,"returnType":"String","description":"","arguments":[{"name":"str","type":"string","description":"","required":true}],"argMin":1}

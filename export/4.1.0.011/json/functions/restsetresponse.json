@@ -1,1 +1,0 @@
-{"returnType":"void","status":"implemeted","arguments":[{"status":"implemeted","description":"A struct that contains the response details.","name":"response","type":"struct","required":true}],"description":"Sets the custom responses.","argMax":-1,"name":"restsetresponse","argMin":1,"type":"java","argumentType":"fixed"}

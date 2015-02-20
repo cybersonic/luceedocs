@@ -1,1 +1,0 @@
-{"returnType":"array","status":"implemeted","arguments":[{"status":"implemeted","description":"","name":"query","type":"query","required":true}],"description":"return the column names as array","argMax":-1,"name":"querycolumnarray","argMin":1,"member":{"chaining":false,"name":"columnArray","type":"query"},"type":"java","argumentType":"fixed"}

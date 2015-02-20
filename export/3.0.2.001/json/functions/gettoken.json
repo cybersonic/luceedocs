@@ -1,1 +1,0 @@
-{"name":"gettoken","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"string","type":"string","description":"","required":true},{"name":"index","type":"number","description":"","required":true},{"name":"delimiters","type":"string","description":"","required":false}],"argMin":2}

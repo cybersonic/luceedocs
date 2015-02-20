@@ -1,1 +1,0 @@
-{"returnType":"array","status":"implemeted","arguments":[{"status":"implemeted","description":"the array to reverse","name":"array","type":"array","required":true}],"description":"Returns a new array, with all the elements reversed","argMax":-1,"name":"arrayreverse","argMin":1,"member":{"chaining":false,"name":"reverse","type":"array"},"type":"java","argumentType":"fixed"}

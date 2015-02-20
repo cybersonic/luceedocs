@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"value","type":"any","description":"Name of an XML attribute"}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isxmlattribute","type":"java","argumentType":"fixed","description":"Determines whether the function parameter is an\n        XML Document Object Model (DOM) attribute node."}

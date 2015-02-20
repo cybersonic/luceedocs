@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"rethrow","nameSpace":"cf","attributes":{},"bodyType":"prohibited","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Rethrows the currently active exception. Preserves the exception's cfcatch.type and cfcatch.\n  agContext information.","attributeType":"fix","parseBody":false}

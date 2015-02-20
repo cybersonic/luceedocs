@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"time range for a certain range.","name":"time","type":"number","required":false}],"description":"returns the CPU usage for a defined time range (default: 1000ms).","argMax":-1,"name":"getcpuusage","argMin":0,"type":"java","argumentType":"fixed"}

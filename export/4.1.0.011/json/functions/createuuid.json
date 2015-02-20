@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[],"description":"Creates a Universally Unique Identifier (UUID). A UUID is a\n        35-character string representation of a unique 128-bit integer\n        xxxxxxxx-xxxx-xxxx-xxxxxxxxxxxxxxxx : x is a hexadecimal digit","argMax":-1,"name":"createuuid","argMin":0,"type":"java","argumentType":"fixed"}

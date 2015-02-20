@@ -1,1 +1,0 @@
-{"name":"fileexists","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"source","type":"any","description":"","required":true},{"name":"allowRealPath","type":"boolean","description":"defines if relative paths are interpreted or not","required":false}],"argMin":1}

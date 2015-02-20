@@ -1,1 +1,0 @@
-{"name":"querycolumnlist","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"delimeter","type":"string","description":"","required":false}],"argMin":1}

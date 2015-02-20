@@ -1,1 +1,0 @@
-{"name":"imagegetbufferedimage","argumentType":"fix","argMax":-1,"returnType":"any","description":"Returns the java.awt.BufferedImage object underlying the current image.","arguments":[{"name":"name","type":"any","description":"","required":true}],"argMin":1}

@@ -1,1 +1,0 @@
-{"name":"imagegetexiftag","argumentType":"fix","argMax":-1,"returnType":"any","description":"Retrieves the specified EXIF tag in an image","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"tagName","type":"string","description":"","required":true}],"argMin":2}

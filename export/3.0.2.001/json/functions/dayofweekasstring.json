@@ -1,1 +1,0 @@
-{"name":"dayofweekasstring","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"day_of_week","type":"number","description":"","required":true},{"name":"locale","type":"string","description":"","required":false}],"argMin":1}

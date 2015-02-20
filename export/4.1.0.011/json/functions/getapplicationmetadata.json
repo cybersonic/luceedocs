@@ -1,1 +1,0 @@
-{"returnType":"struct","status":"implemeted","arguments":[],"description":"return all data from this scope, when using a application.cfc or all setting defined in tag cfapplication","argMax":-1,"name":"getapplicationmetadata","argMin":0,"type":"java","argumentType":"fixed"}

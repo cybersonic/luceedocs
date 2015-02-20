@@ -1,1 +1,0 @@
-{"name":"fileread","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"object","type":"any","description":"","required":true},{"name":"charsetOrSize","type":"any","description":"","required":false}],"argMin":1}

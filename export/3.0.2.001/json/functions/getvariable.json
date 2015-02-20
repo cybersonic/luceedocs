@@ -1,1 +1,0 @@
-{"name":"getvariable","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"name","type":"string","description":"","required":true}],"argMin":1}

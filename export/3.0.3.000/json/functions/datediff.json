@@ -1,1 +1,0 @@
-{"name":"datediff","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"datepart","type":"string","description":"","required":true},{"name":"date1","type":"datetime","description":"","required":true},{"name":"date2","type":"datetime","description":"","required":true}],"argMin":3}

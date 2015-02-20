@@ -1,0 +1,88 @@
+TO BE IMPLEMENTED
+reblock:html]
+{
+"html": "<ul class=\"list-inline\">\n  <li><a href=\"#summary\">Summary</a></li>\n  <li>&middot</li>\n  <li><a href=\"#attributes\">Attributes</a></li>\n  <li>&middot</li>\n  <li><a href=\"#tag-examples\">Tag examples</a></li>\n  <li>&middot</li>\n  <li><a href=\"#script-examples\">Script examples</a></li>\n  <li>&middot</li>\n  <li><a href=\"#external-examples\">External examples</a></li>\n</ul>\n<hr>"
+}
+[/block]
+
+[block:api-header]
+{
+"type": "basic",
+"title": "Summary"
+}
+[/block]
+Stops processing of a page at the tag location. Lucee returns everything that was processed before the cfabort tag. The cfabort tag is often used with conditional logic to stop processing a page when a condition occurs.
+[block:api-header]
+{
+"type": "basic",
+"title": "Attributes"
+}
+[/block]
+
+[block:parameters]
+{
+"data": {
+"h-0": "Name",
+"h-1": "Type",
+"h-2": "Required",
+"h-3": "Description",
+"0-0": "type",
+"0-3": "Define if only current page execution will aborted or the hole request.\nValues are \"page\" for the current page or \"request\" for all.",
+"1-0": "showerror",
+"0-1": "string",
+"1-1": "string",
+"0-2": "No",
+"1-2": "No",
+"1-3": "The error to display when cfabort executes.\nThe error message displays in the standard CFML error page."
+},
+"cols": 4,
+"rows": 2
+}
+[/block]
+
+
+[block:api-header]
+{
+"title": "Tag examples",
+"type": "basic"
+}
+[/block]
+
+[block:code]
+{
+"codes": [
+{
+"code": "This will be output\n<cf<%= tag.name %>\nThis will not",
+    "language": "text",
+    "name": "cfabort.cfm"
+    }
+    ]
+    }
+    [/block]
+
+    [block:api-header]
+    {
+    "type": "basic",
+    "title": "Script examples"
+    }
+    [/block]
+
+    [block:code]
+    {
+    "codes": [
+    {
+    "code": "This will be output\n<cfscript>\n\tabort;\n</cfscript>\nThis will not",
+    "language": "text",
+    "name": "cfabort.cfm"
+    }
+    ]
+    }
+    [/block]
+
+    [block:api-header]
+    {
+    "type": "basic",
+    "title": "External examples"
+    }
+    [/block]
+    There are currently no external examples available for cfabort. Please submit any good resources (blog posts, mailing list messages, etc) about this specific tag.

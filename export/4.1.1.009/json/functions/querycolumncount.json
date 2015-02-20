@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"query","type":"query","description":""}],"argMin":1,"returnType":"number","status":"implemeted","name":"querycolumncount","type":"java","argumentType":"fixed","description":"column count of given query","member":{"chaining":false,"name":"columnCount","type":"query"}}

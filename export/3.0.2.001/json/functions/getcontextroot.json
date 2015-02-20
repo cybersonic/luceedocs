@@ -1,1 +1,0 @@
-{"name":"getcontextroot","argumentType":"fix","argMax":-1,"returnType":"string","description":"returns the root of this actuell Page Context","arguments":[],"argMin":0}

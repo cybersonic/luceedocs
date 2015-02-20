@@ -1,1 +1,0 @@
-{"name":"queryaddrow","argumentType":"fix","argMax":-1,"returnType":"number","description":"","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"number","type":"number","description":"","required":false}],"argMin":1}

@@ -1,1 +1,0 @@
-{"returnType":"void","status":"implemeted","arguments":[{"status":"implemeted","description":"The image on which this operation is performed.","name":"name","type":"any","required":true}],"description":"Converts a image to grayscale.","argMax":-1,"name":"imagegrayscale","argMin":1,"type":"java","argumentType":"fixed"}

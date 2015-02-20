@@ -1,1 +1,0 @@
-{"name":"getsoaprequestheader","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"namespace","type":"string","description":"","required":true},{"name":"name","type":"string","description":"","required":true},{"name":"asXML","type":"boolean","description":"","required":false}],"argMin":2}

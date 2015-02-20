@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"A string or variable that represents one.","name":"var","type":"any","required":true}],"description":"Evaluates whether a string is in valid JSON (JavaScript Object Notation) data interchange format.","argMax":-1,"name":"isjson","argMin":1,"type":"java","argumentType":"fixed"}

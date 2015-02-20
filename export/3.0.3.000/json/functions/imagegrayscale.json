@@ -1,1 +1,0 @@
-{"name":"imagegrayscale","argumentType":"fix","argMax":-1,"returnType":"void","description":"Converts a image to grayscale.","arguments":[{"name":"name","type":"any","description":"","required":true}],"argMin":1}

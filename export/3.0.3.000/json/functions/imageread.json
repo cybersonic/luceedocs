@@ -1,1 +1,0 @@
-{"name":"imageread","argumentType":"fix","argMax":-1,"returnType":"any","description":"Reads the source pathname or URL and creates a image.","arguments":[{"name":"path","type":"any","description":"","required":true}],"argMin":1}

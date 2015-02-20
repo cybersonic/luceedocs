@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"URL of a cfml template","name":"url","type":"string","required":true}],"description":"Encodes the URL with the CFTOKEN\/CFID\/JSESSIONID","argMax":-1,"name":"urlsessionformat","argMin":1,"type":"java","argumentType":"fixed"}

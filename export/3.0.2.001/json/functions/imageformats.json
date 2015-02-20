@@ -1,1 +1,0 @@
-{"name":"imageformats","argumentType":"fix","argMax":-1,"returnType":"struct","description":"return all available readers and writers","arguments":[],"argMin":0}

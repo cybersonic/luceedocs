@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"Number to find the absolute value of","name":"number","type":"number","required":true}],"description":"Absolute-value function. The absolute value of a number is the number without its sign.","argMax":-1,"name":"abs","argMin":1,"type":"java","argumentType":"fixed"}

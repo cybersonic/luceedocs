@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"path to the zip file","name":"path","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"Verifies whether an zip file is valid.","name":"iszipfile","type":"java","argMax":-1,"returnType":"boolean"}

@@ -1,1 +1,0 @@
-{"name":"getprofilestring","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"iniPath","type":"string","description":"","required":true},{"name":"section","type":"string","description":"","required":true},{"name":"entry","type":"string","description":"","required":true}],"argMin":3}

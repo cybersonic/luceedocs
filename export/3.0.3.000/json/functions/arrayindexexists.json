@@ -1,1 +1,0 @@
-{"name":"arrayindexexists","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"array","type":"array","description":"","required":true},{"name":"index","type":"number","description":"","required":true}],"argMin":2}

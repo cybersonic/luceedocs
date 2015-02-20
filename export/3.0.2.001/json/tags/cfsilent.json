@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"silent","nameSpace":"cf","attributes":{"bufferoutput":{"type":"boolean","description":"","required":false}},"bodyType":"required","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Suppresses all output that is produced by the CFML within the tag's scope.","attributeType":"fix","parseBody":false}

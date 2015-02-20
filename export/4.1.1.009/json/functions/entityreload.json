@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"entity","type":"object","description":"name of the entity"}],"argMin":1,"returnType":"void","status":"implemeted","name":"entityreload","type":"java","argumentType":"fixed","description":"Reloads data for an entity that is already loaded."}

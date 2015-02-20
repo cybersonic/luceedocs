@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"number","type":"number","description":"A positive integer. Number whose square root to get."}],"argMin":1,"returnType":"number","status":"implemeted","name":"sqr","type":"java","argumentType":"fixed","description":"Calculates the square root of a number."}

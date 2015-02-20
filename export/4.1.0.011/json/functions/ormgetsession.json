@@ -1,1 +1,0 @@
-{"returnType":"object","status":"implemeted","arguments":[],"description":"Returns the current ORM session","argMax":-1,"name":"ormgetsession","argMin":0,"type":"java","argumentType":"fixed"}

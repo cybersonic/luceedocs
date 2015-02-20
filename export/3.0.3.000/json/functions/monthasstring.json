@@ -1,1 +1,0 @@
-{"name":"monthasstring","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"monthnumber","type":"number","description":"","required":true},{"name":"locale","type":"string","description":"","required":false}],"argMin":1}

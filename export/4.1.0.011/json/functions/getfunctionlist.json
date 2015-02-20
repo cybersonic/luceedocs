@@ -1,1 +1,0 @@
-{"returnType":"struct","status":"implemeted","arguments":[],"description":"Returns all the currently registered functions","argMax":-1,"name":"getfunctionlist","argMin":0,"type":"java","argumentType":"fixed"}

@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"","name":"stringOrBinary","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"literal representation of a serializable Java Object, used by the serialize method.","name":"evaluatejava","type":"java","argMax":-1,"returnType":"any"}

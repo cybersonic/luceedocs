@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"date","type":"datetime","description":"date object"}],"argMin":1,"returnType":"datetime","status":"implemeted","name":"createodbcdatetime","type":"java","argumentType":"fixed","description":"Creates an ODBC date-time object."}

@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"Number or string","name":"value","type":"any","required":true}],"description":"Determines if the object represents a boolean value","argMax":-1,"name":"isboolean","argMin":1,"type":"java","argumentType":"fixed"}

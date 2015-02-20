@@ -1,1 +1,0 @@
-{"name":"isvideofile","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Check if a String is a Video file","arguments":[{"name":"value","type":"string","description":"","required":true}],"argMin":1}

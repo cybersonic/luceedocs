@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"array","type":"array","description":"a array"}],"argMin":1,"returnType":"any","status":"implemeted","name":"arraylast","type":"java","argumentType":"fixed","description":"Returns the last element of an array","member":{"chaining":false,"name":"last","type":"array"}}

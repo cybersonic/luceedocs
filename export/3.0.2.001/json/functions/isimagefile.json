@@ -1,1 +1,0 @@
-{"name":"isimagefile","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"Verifies whether an image file is valid.","arguments":[{"name":"path","type":"string","description":"","required":true}],"argMin":1}

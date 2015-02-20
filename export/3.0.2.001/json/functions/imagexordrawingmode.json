@@ -1,1 +1,0 @@
-{"name":"imagexordrawingmode","argumentType":"fix","argMax":-1,"returnType":"void","description":"Sets the paint mode of the image to alternate between the image's current color and the new specified color.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"color","type":"string","description":"","required":true}],"argMin":2}

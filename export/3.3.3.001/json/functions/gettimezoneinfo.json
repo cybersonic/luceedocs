@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Returns back a structure regarding the current timezone; utctotaloffset, utchouroffset, utcminuteoffset, isdston","name":"gettimezoneinfo","type":"java","argMax":-1,"returnType":"struct"}

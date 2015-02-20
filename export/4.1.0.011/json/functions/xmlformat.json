@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"A string or a variable that contains one","name":"string","type":"string","required":true}],"description":"Escapes special XML characters in a string, so that the\n        string is safe to use with XML.","argMax":-1,"name":"xmlformat","argMin":1,"type":"java","argumentType":"fixed"}

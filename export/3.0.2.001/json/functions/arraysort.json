@@ -1,1 +1,0 @@
-{"name":"arraysort","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"array","type":"array","description":"","required":true},{"name":"sort_type","type":"string","description":"","required":true},{"name":"sort_order","type":"string","description":"","required":false}],"argMin":2}

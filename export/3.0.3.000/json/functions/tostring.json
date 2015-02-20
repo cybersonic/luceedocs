@@ -1,1 +1,0 @@
-{"name":"tostring","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"string","type":"any","description":"","required":false},{"name":"arg2","type":"string","description":"","required":false}],"argMin":0}

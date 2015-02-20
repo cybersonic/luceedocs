@@ -1,1 +1,0 @@
-{"returnType":"any","status":"implemeted","arguments":[{"status":"implemeted","description":"The entity that must be attached to the ORM session.","name":"entity","type":"any","required":true}],"description":"Attaches given enity to current ORM session","argMax":-1,"name":"entitymerge","argMin":1,"type":"java","argumentType":"fixed"}

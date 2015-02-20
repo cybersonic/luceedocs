@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[],"argMin":0,"returnType":"string","status":"implemeted","name":"gettempdirectory","type":"java","argumentType":"fixed","description":"Returns the full path to the currently assigned temporary directory"}

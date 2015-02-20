@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"the scheme of the virtual filesystem (ram,file,s3,http,https,zip,tar ...).","name":"scheme","type":"string","required":true}],"argMin":1,"status":"implemeted","description":"Returns metadata for VFS","name":"getvfsmetadata","type":"java","argMax":-1,"returnType":"struct"}

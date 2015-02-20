@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"the string to trim","name":"string","type":"string","required":true}],"description":"Removes leading and trailing spaces from a string.","argMax":-1,"name":"trim","argMin":1,"type":"java","argumentType":"fixed"}

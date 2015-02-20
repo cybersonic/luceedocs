@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Tangent of an angle","name":"number","type":"number","required":true}],"argMin":1,"status":"implemeted","description":"Arctangent function. The arctangent is the angle whose tangent\n        is number.","name":"atn","type":"java","argMax":-1,"returnType":"number"}

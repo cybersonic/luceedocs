@@ -1,1 +1,0 @@
-{"name":"queryconvertforgrid","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"query","type":"query","description":"","required":true},{"name":"page","type":"number","description":"","required":true},{"name":"pageSize","type":"number","description":"","required":true}],"argMin":3}

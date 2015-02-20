@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"number","type":"any","description":"A real number"}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isnumericdate","type":"java","argumentType":"fixed","description":"Evaluates whether a real number is a valid representation of a\n        date (date\/time object)."}

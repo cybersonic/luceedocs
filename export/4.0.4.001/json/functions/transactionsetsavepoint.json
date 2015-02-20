@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"source":"C:\\Users\\mark.drew\\Desktop\\railos\\railo-express-4.0.4.001-jre-win32\\lib\\ext\\railo-server\\context\\library\\function\\transactionSetsavepoint.cfm","status":"implemeted","description":"Saves a specific state within a transaction","name":"transactionsetsavepoint","type":"cfml","argMax":0,"returnType":"void"}

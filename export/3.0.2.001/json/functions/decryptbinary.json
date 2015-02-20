@@ -1,1 +1,0 @@
-{"name":"decryptbinary","argumentType":"fix","argMax":-1,"returnType":"any","description":"","arguments":[{"name":"input","type":"any","description":"","required":true},{"name":"key","type":"string","description":"","required":true},{"name":"algorithm","type":"string","description":"","required":false}],"argMin":2}

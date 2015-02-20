@@ -1,1 +1,0 @@
-{"name":"structappend","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"Struct1","type":"struct","description":"","required":true},{"name":"Struct2","type":"struct","description":"","required":true},{"name":"OverwriteFlag","type":"boolean","description":"","required":false}],"argMin":2}

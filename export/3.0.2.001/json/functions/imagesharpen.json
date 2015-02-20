@@ -1,1 +1,0 @@
-{"name":"imagesharpen","argumentType":"fix","argMax":-1,"returnType":"void","description":"Sharpens a image by using the unsharp mask filter.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"gain","type":"number","description":"","required":false}],"argMin":1}

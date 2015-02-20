@@ -1,1 +1,0 @@
-{"returnType":"boolean","status":"implemeted","arguments":[{"status":"implemeted","description":"file to check","name":"value","type":"string","required":true}],"description":"Check if a String is a Video file","argMax":-1,"name":"isvideofile","argMin":1,"type":"java","argumentType":"fixed"}

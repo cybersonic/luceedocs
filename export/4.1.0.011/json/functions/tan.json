@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"Angle, in radians, for which to calculate the tangent.","name":"number","type":"number","required":true}],"description":"Calculates the tangent of an angle that is entered in radians.","argMax":-1,"name":"tan","argMin":1,"type":"java","argumentType":"fixed"}

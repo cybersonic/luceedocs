@@ -1,1 +1,0 @@
-{"returnType":"string","status":"implemeted","arguments":[{"status":"implemeted","description":"A value (a number in the range 0 - 65535, inclusive)","name":"number","type":"number","required":true}],"description":"Returns the character represented by the ascii value","argMax":-1,"name":"chr","argMin":1,"type":"java","argumentType":"fixed"}

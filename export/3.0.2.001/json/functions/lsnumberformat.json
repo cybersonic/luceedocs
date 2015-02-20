@@ -1,1 +1,0 @@
-{"name":"lsnumberformat","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"number","type":"any","description":"","required":true},{"name":"mask","type":"string","description":"","required":false},{"name":"locale","type":"string","description":"","required":false}],"argMin":1}

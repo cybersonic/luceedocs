@@ -1,1 +1,0 @@
-{"returnType":"void","status":"implemeted","arguments":[{"status":"implemeted","description":"Name of the entity being deleted.","name":"name","type":"object","required":true}],"description":"Deletes the record from the database for the specified entity.\nEntityDelete(entity)","argMax":-1,"name":"entitydelete","argMin":1,"type":"java","argumentType":"fixed"}

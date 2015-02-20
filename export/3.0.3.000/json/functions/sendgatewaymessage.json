@@ -1,1 +1,0 @@
-{"name":"sendgatewaymessage","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"gatewayID","type":"string","description":"","required":true},{"name":"data","type":"any","description":"","required":true}],"argMin":2}

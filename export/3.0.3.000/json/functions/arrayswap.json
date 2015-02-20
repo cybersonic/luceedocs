@@ -1,1 +1,0 @@
-{"name":"arrayswap","argumentType":"fix","argMax":-1,"returnType":"boolean","description":"","arguments":[{"name":"array","type":"array","description":"","required":true},{"name":"position1","type":"number","description":"","required":true},{"name":"position2","type":"number","description":"","required":true}],"argMin":3}

@@ -1,1 +1,0 @@
-{"name":"imagesheardrawingaxis","argumentType":"fix","argMax":-1,"returnType":"void","description":"Shears the drawing canvas.","arguments":[{"name":"name","type":"any","description":"","required":true},{"name":"shx","type":"number","description":"","required":true},{"name":"shy","type":"number","description":"","required":true}],"argMin":3}

@@ -1,1 +1,0 @@
-{"name":"createodbcdatetime","argumentType":"fix","argMax":-1,"returnType":"datetime","description":"","arguments":[{"name":"date","type":"datetime","description":"","required":true}],"argMin":1}

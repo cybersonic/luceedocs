@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[],"argMin":0,"status":"implemeted","description":"Returns a list of image formats that Railo can write on the operating system where Railo is deployed.","name":"getwriteableimageformats","type":"java","argMax":-1,"returnType":"string"}

@@ -1,0 +1,112 @@
+// define global less mixins here
+@base-font: 'Open Sans', Arial, sans-serif;
+@heading-font: @base-font;
+@font-arial: @base-font;
+
+@xs-portrait: ~" only screen and (max-width: 479px)";
+@xs-portrait-wider: ~" only screen and (max-width: 579px)";
+@xs: ~" only screen and (max-width: 767px)";
+@xs-min: ~" only screen and (min-width: 768px)";
+@sm: ~" only screen and (max-width: 979px)";
+@sm-min: ~" only screen and (min-width: 980px)";
+@md: ~" only screen and (max-width: 1199px)";
+@md-min: ~" only screen and (min-width: 1200px)";
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+    margin-left:  (@gutter / -2);
+    margin-right: (@gutter / -2);
+    .clearfix();
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns, @gutter: @grid-gutter-width) {
+    position: relative;
+    float: left;
+    width: percentage((@columns / @grid-columns));
+    // Prevent columns from collapsing when empty
+    min-height: 1px;
+    // Inner gutter via padding
+    padding-left:  (@gutter / 2);
+    padding-right: (@gutter / 2);
+}
+
+.placeholders(@color: #ccc) {
+	input::-webkit-input-placeholder { color: @color; }
+	input:-moz-placeholder { color: @color; }
+	textarea::-webkit-input-placeholder { color: @color; }
+	textarea:-moz-placeholder { color: @color; }
+}
+
+.border-radius(@rad: 5px) {
+	-webkit-border-radius: @rad;
+	-moz-border-radius: @rad;
+	border-radius: @rad;
+}
+
+.box-shadow (@string) {
+    -webkit-box-shadow: @string;
+    -moz-box-shadow:    @string;
+    box-shadow:         @string;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition:    @transition;
+    -ms-transition:     @transition;
+    -o-transition:      @transition;
+}
+
+.box-sizing (@string: border-box) {
+    -webkit-box-sizing: @string;
+    -moz-box-sizing: @string;
+    box-sizing: @string;
+}
+
+.reset-list() {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sprite-icon(@width, @height, @bg-position) {
+    background-image: url("/assets/img/ico-sprite.png");
+    background-repeat: no-repeat;
+    background-position: @bg-position;
+    width: @width;
+    height: @height;
+    content: "";
+    display: inline-block;
+    text-indent: -999em;
+}
+
+.button(@color: #fff) {
+    border: none;
+    padding: 12px 20px;
+    color: @color;
+    background: @btn-bg;
+    font-family: @heading-font;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    &:hover {
+        color: @color;
+    }
+    &.disabled,
+    &[disabled] {
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+    }
+}

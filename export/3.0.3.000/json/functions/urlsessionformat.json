@@ -1,1 +1,0 @@
-{"name":"urlsessionformat","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"url","type":"string","description":"","required":true}],"argMin":1}

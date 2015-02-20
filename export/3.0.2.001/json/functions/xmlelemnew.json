@@ -1,1 +1,0 @@
-{"name":"xmlelemnew","argumentType":"fix","argMax":-1,"returnType":"org.w3c.dom.Element","description":"","arguments":[{"name":"xmlObj","type":"node","description":"","required":true},{"name":"childName","type":"string","description":"","required":true}],"argMin":2}

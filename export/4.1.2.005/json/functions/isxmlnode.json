@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"value","type":"any","description":"Name of an XML document object node."}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isxmlnode","type":"java","argumentType":"fixed","description":"Determines whether the function parameter is\n        an XML document object node."}

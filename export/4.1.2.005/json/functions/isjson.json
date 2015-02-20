@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"var","type":"any","description":"A string or variable that represents one."}],"argMin":1,"returnType":"boolean","status":"implemeted","name":"isjson","type":"java","argumentType":"fixed","description":"Evaluates whether a string is in valid JSON (JavaScript Object Notation) data interchange format."}

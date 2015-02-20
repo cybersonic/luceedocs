@@ -1,1 +1,0 @@
-{"name":"xmlparse","argumentType":"fix","argMax":-1,"returnType":"node","description":"","arguments":[{"name":"xmlString","type":"string","description":"","required":true},{"name":"caseSensitive","type":"boolean","description":"","required":false},{"name":"validator","type":"string","description":"","required":false}],"argMin":1}

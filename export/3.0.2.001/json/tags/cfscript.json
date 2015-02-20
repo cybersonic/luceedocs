@@ -1,1 +1,0 @@
-{"attrMax":0,"name":"script","nameSpace":"cf","attributes":{"language":{"type":"string","description":"","required":false}},"bodyType":"required","nameSpaceSeperator":"","hasNameAppendix":false,"attrMin":0,"description":"Encloses a code segment containing cfscript.","attributeType":"fix","parseBody":false}

@@ -1,1 +1,0 @@
-{"name":"getbasetagdata","argumentType":"fix","argMax":-1,"returnType":"struct","description":"","arguments":[{"name":"tagname","type":"string","description":"","required":true},{"name":"instancenumber","type":"number","description":"","required":false}],"argMin":1}

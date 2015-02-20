@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"Structure to access","name":"structure","type":"struct","required":true}],"description":"Counts the keys in a structure.","argMax":-1,"name":"structcount","argMin":1,"member":{"chaining":false,"name":"len","type":"struct"},"type":"java","argumentType":"fixed"}

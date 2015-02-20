@@ -1,1 +1,0 @@
-{"returnType":"number","status":"implemeted","arguments":[{"status":"implemeted","description":"Real number to round down to an integer.","name":"number","type":"number","required":true}],"description":"Calculates the closest integer that is smaller than number.","argMax":-1,"name":"int","argMin":1,"type":"java","argumentType":"fixed"}

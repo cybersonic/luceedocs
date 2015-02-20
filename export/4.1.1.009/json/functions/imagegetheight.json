@@ -1,1 +1,0 @@
-{"argMax":-1,"arguments":[{"required":true,"status":"implemeted","name":"name","type":"any","description":"The image on which this operation is performed."}],"argMin":1,"returnType":"number","status":"implemeted","name":"imagegetheight","type":"java","argumentType":"fixed","description":"Retrieves the height of the image in pixels."}

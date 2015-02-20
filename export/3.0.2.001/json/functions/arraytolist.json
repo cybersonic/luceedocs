@@ -1,1 +1,0 @@
-{"name":"arraytolist","argumentType":"fix","argMax":-1,"returnType":"string","description":"","arguments":[{"name":"array","type":"array","description":"","required":true},{"name":"delimiter","type":"string","description":"","required":false}],"argMin":1}

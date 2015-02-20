@@ -1,1 +1,0 @@
-{"argumentType":"fixed","arguments":[{"status":"implemeted","description":"Number or string","name":"value","type":"any","required":true}],"argMin":1,"status":"implemeted","description":"Determines whether a value is stored as binary data.","name":"isbinary","type":"java","argMax":-1,"returnType":"boolean"}
