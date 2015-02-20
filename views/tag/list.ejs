@@ -16,7 +16,7 @@
 <section id="tags">
 	<div class="page-header">
 		 <h2>Tags </h2>
-		 <p class="lead">Tags are the core of Railo Server.
+		 <p class="lead">Tags are the core of Lucee Server.
 		</p>
 	
 
@@ -24,10 +24,10 @@
 	
 	<div class="row">
 		<div class="col-md-12">
-			<ul class="pagination alphabet">
+			<ul class="nav nav-justified">
 				<% for(initial in tagsAtoZ) { %>
 
-				<li><a href="<%= "#" + initial %>"><%= initial %></a></li>
+				<li class="btn btn-default btn-xs"><a href="<%= "#" + initial %>"><%= initial %></a></li>
 
 				<% } %>
 
@@ -50,7 +50,7 @@
 				<h4><%= initial.toUpperCase() %></h4>
 				<cfset items = list.getItemsInGroup(al)>
 				
-				<ul>
+				<ul class="list list-unstyled">
 					<% for(t in tagsAtoZ[initial]) {%>
 					<% var tag = tagsAtoZ[initial][t]%>
 						<li>
