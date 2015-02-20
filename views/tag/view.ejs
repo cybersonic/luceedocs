@@ -48,18 +48,17 @@
 		<% versioninfo =  version.split(".") %>
 		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
 
-	
+    <h5>
 		<% if(tag.type == 'cfml') { %> 
-			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/tag/<%= tag.name%>.cfc" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/tag/<%= tag.name%>.cfc" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
 			
 		<%}%>
 
 		<% if(tag.type == 'java') { %> 
-			
-			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/tld/web-cfmtaglibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/tld/web-cfmtaglibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
 				
 		<%}%>
-
+    <a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/tags/cf<%= tag.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
 	<h4>Example</h4>
 	
 	<pre class="prettyprint"><%= tagcode %></pre>
