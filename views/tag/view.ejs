@@ -46,18 +46,17 @@
 	
 	<div class="text"><%= body[tag.bodyType] %></div>
 		<% versioninfo =  version.split(".") %>
-		<% majmin = versioninfo[0] + "." + versioninfo[1]; %>
+		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
 
 	
 		<% if(tag.type == 'cfml') { %> 
-			
-			<h5><a href="https://bitbucket.org/lucee/lucee/blob/<%=majmin%>/lucee-cfml/lucee-core/src/resource/library/tag/<%= tag.name%>.cfc" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/tag/<%= tag.name%>.cfc" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
 			
 		<%}%>
 
 		<% if(tag.type == 'java') { %> 
 			
-			<h5><a href="https://bitbucket.org/lucee/lucee/blob/<%=majmin%>/lucee-java/lucee-core/src/resource/tld/web-cfmtaglibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/tld/web-cfmtaglibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
 				
 		<%}%>
 

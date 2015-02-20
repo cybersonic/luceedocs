@@ -15,7 +15,7 @@ exports.list = function(req, res){
 		res.json(taglist);
 		return;	
 	}
-	res.locals.title = "Railo Tag Documentation";
+	res.locals.title = "Lucee Tag Documentation";
 	res.render('tag/list', { tags: taglist, version: currentversion });
 };
 
@@ -42,7 +42,7 @@ exports.get = function(req, res){
 			return;	
 	}
 
-	res.locals.title = "Railo "+ id +" Tag Documentation";
+	res.locals.title = "Lucee "+ id +" Tag Documentation";
 	res.render('tag/view', {
 		 tag : tagdata,
 		 version: currentversion,

@@ -54,7 +54,7 @@
 	<% } %>
 
 		<% versioninfo =  version.split(".") %>
-		<% majmin = versioninfo[0] + "." + versioninfo[1]; %>
+		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
 		<% if(func.type == 'cfml') { %> 
 			
 			<%
@@ -63,13 +63,13 @@
 				
 			%>
 		
-			<h5><a href="https://github.com/getLucee/Lucee/blob/<%=majmin%>/Lucee-java/Lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
 			
 		<%}%>
 
 		<% if(func.type == 'java') { %> 
 			
-			<h5><a href="https://github.com/getLucee/Lucee/blob/<%=majmin%>/Lucee-java/Lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
 				
 		<%}%>
 	
