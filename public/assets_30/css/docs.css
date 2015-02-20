@@ -37,3 +37,12 @@ body {
 .alphabet.affix {
 	top:30px;
 }
+/**In-Page Positional Anchors - to offset fixed nav**/
+.anchor:before {
+	content: ''; 
+	display: block; 
+	position: relative; 
+	width: 0; 
+	height: 5em; 
+	margin-top: 50px; 
+}

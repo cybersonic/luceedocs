@@ -45,8 +45,7 @@
 	<div class="row">
 		<% for(initial in tagsAtoZ) { %>
 
-			
-			<div class="col-sm-4" id="<%= initial %>">
+		<div class="anchor col-sm-4" id="<%= initial %>">
 				<h4><%= initial.toUpperCase() %></h4>
 				<cfset items = list.getItemsInGroup(al)>
 				
