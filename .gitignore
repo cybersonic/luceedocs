@@ -6,3 +6,4 @@ newrelic_agent.log
 *.iml
 .idea/
 export/4.2.1.008/markdown/
+.DS_Store
