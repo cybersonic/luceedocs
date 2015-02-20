@@ -26,7 +26,7 @@ var home = require('./controllers/home');
 var search = require('./controllers/search');
 
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/favicon.png'));
 app.use(home.before);
 app.set('view engine', 'ejs');
 app.set('layout', "layout/layout");

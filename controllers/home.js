@@ -1,5 +1,4 @@
 var version = require('../model/version.js');
-var packageinfo = require('../package.json');
 
 exports.index = function(req,res){
 
@@ -8,7 +7,7 @@ exports.index = function(req,res){
 
 exports.before = function(req,res, next){
 
-	res.locals.title =  packageinfo.name;
+	res.locals.title = "Lucee Documentation";
 	res.locals.version = version.current();
  	next();
 }

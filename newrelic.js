@@ -13,7 +13,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['RailoDocs_Node' + env],
+  app_name : ['LuceeDocs_Node' + env],
   /**
    * Your New Relic license key.
    */

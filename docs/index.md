@@ -1,4 +1,4 @@
-# Welcome to LucceDocs
+# Welcome to LuceeDocs
 
 Here goes al the information about the docs you need to know!
 

@@ -26,10 +26,10 @@ for(t in functions){
 
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="pagination alphabet">
+                    <ul class="nav nav-justified">
                         <% for(initial in AtoZ) { %>
 
-                        <li><a href="<%= "#" + initial %>"><%= initial %></a></li>
+                        <li class="btn btn-default btn-xs"><a href="<%= "#" + initial %>"><%= initial %></a></li>
 
                         <% } %>
 
@@ -48,12 +48,11 @@ for(t in functions){
             <div class="row">
                 <% for(initial in AtoZ) { %>
 
-
                 <div class="col-sm-4" id="<%= initial %>">
                     <h4><%= initial.toUpperCase() %></h4>
                     <cfset items = list.getItemsInGroup(al)>
 
-                        <ul>
+                        <ul class="list list-unstyled">
                             <% for(t in AtoZ[initial]) {%>
                             <% var tag = AtoZ[initial][t]%>
                             <li>
