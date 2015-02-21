@@ -2,7 +2,7 @@
 param name="url.exportPath" default="#expandPath("../../../export")#";
 
 	sep = SERVER.separator.file;
-	version=  SERVER.railo.version;
+	version=  SERVER.lucee.version;
 
 
 	ExportPath = "#url.exportPath##sep##version#";
@@ -80,7 +80,7 @@ param name="url.exportPath" default="#expandPath("../../../export")#";
 	FileWrite(JSONDocsPath & "#sep#tags.json", SerializeJSON(taglist));
 
 	//Finally Write the Version information json
-	versioninfo = Duplicate( SERVER.railo);
+	versioninfo = Duplicate( SERVER.lucee);
 
 	//Remove system info
 	StructDelete(versioninfo, 'loaderPath');
