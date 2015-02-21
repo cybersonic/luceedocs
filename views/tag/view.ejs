@@ -3,7 +3,9 @@
 </style>
 <div class="jumbotron">
 	<h1>cf<%= tag.name %> </h1>
-	<p><%= tag.description %></p>
+	<p>
+	<%- tag.description.length < 300?renderMarkdown(tag.description):tag.description.split("\n")[0]+'<a href="#longdesc">[Read More]</a>' %>
+	</p>
 	<%
 		String.prototype.capitalize = function() {
     		return this.charAt(0).toUpperCase() + this.slice(1);
@@ -161,6 +163,11 @@
 				</tbody>
 			</table>
 	<%}%>
+
+	<% if(tag.description.length > 300){ %>
+	<h4 class="anchor" id="longdesc">Full Description</h4>
+	<p><%- renderMarkdown(tag.description) %></p>
+	<% } %>
 
 <!--
 

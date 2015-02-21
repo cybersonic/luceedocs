@@ -3,7 +3,7 @@
 </style>
 <div class="jumbotron">
 	<h1><%= func.name %> </h1>
-	<p><%= func.description %></p>
+	<p><%- func.description.length < 300?renderMarkdown(func.description):func.description.split("\n")[0]+'<a href="#longdesc">[Read More]</a>' %></p>
 	<p>Returns: <%= func.returnType %></p>
 	<%
 		String.prototype.capitalize = function() {
@@ -37,6 +37,7 @@
 
 		<% versioninfo =  version.split(".") %>
 		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
+        <h5>
 		<% if(func.type == 'cfml') { %> 
 			
 			<%
@@ -45,17 +46,17 @@
 				
 			%>
 		
-			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
+			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a><
 			
 		<%}%>
 
-		<% if(func.type == 'java') { %> 
-			
-			<h5><a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
-				
+		<% if(func.type == 'java') { %>
+            <a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
 		<%}%>
-	
-	<h4>Example</h4>
+    <a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/functions/<%= func.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
+
+
+    <h4>Example</h4>
 	<pre class="prettyprint"><%= tagcode %></pre>
 
 	<% if(func.member && Object.keys(func.member).length){ %>
@@ -144,6 +145,10 @@
 			<% } %>
 			</tbody>
 		</table>
+	<% } %>
+	<% if(func.description.length > 300){ %>
+	<h4 class="anchor" id="longdesc">Full Description</h4>
+	<p><%- renderMarkdown(func.description) %></p>
 	<% } %>
 
 	<% if(process.env.NODE_ENV && process.env.NODE_ENV == 'production'){ %>
