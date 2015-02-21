@@ -2,7 +2,7 @@
 param name="url.exportPath" default="#expandPath("/export")#";
 
 	sep = SERVER.separator.file;
-	version= SERVER.lucee.version;
+	version=  SERVER.lucee.version;
 		
 	
 	
@@ -63,6 +63,9 @@ param name="url.exportPath" default="#expandPath("/export")#";
 		funclist.append(fun);
 		fundata = getFunctionData(fun);
 		funcPath = FuncsPath & "#sep##fun#.json";
+		//handle our CDATA tab characters after line breaks or our markdown is interpreted as a code block
+		if(structKeyExists(fundata,'description'))
+			fundata.description=replace(fundata.description,chr(9),'','all');
 		fileWrite(funcPath,SerializeJSON(fundata));
 	}
 	arraySort(funclist, "textnocase", "ASC");
@@ -81,7 +84,10 @@ param name="url.exportPath" default="#expandPath("/export")#";
 		taglist.append("cf" & tag);
 		tagData = getTagData("cf", tag);
 		tagPath = TagsPath & "#sep#cf#tag#.json";
+		if(structKeyExists(tagData,'description'))
+			tagData.description=replace(fundata.description,chr(9),'','all');
 		fileWrite(tagPath,SerializeJSON(tagData));
+		
 	}
 	arraySort(taglist, "textnocase", "ASC");
 	FileWrite(JSONDocsPath & "#sep#tags.json", SerializeJSON(taglist));
