@@ -24,6 +24,7 @@ exports.get = function(req, res){
 
 	var id = util.stripJSONSuffix(req.params.id);
 	var currentversion = version.current();
+	var marked=require('marked');
 
 	var cleansedTag = util.cleanTag(id)
 
@@ -48,7 +49,8 @@ exports.get = function(req, res){
 		 version: currentversion,
 		 tagcode:tag.toTagCode(tagdata),
 		 scriptcode:tag.toScriptCode(tagdata),
-		 attrinfo : tag.attributeTitles()
+		 attrinfo : tag.attributeTitles(),
+		 renderMarkdown : marked
 		});
 };
 
