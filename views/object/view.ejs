@@ -19,7 +19,10 @@
 
 
 	<h1><%= typesubs[func.member.type] %>.<%= func.member.name %>()	 </h1>
-	<p><%= func.description %></p>
+	
+	<p>
+	<%- func.description.length < 300?renderMarkdown(func.description):func.description.split("\n")[0]+'<a href="#longdesc">[Read More]</a>' %>
+	</p>
 	<p>Returns: <%= func.returnType %></p>
 	<%
 		String.prototype.capitalize = function() {
@@ -166,6 +169,11 @@
 			<% } %>
 			</tbody>
 		</table>
+	<% } %>
+
+	<% if(func.description.length > 300){ %>
+	<h4 class="anchor" id="longdesc">Full Description</h4>
+	<p><%- renderMarkdown(func.description) %></p>
 	<% } %>
 
 	<% if(process.env.NODE_ENV && process.env.NODE_ENV == 'production'){ %>
