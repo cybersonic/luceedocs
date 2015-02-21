@@ -5,8 +5,7 @@ var AtoZ = {};
 for(t in functions){
     var fun = functions[t];
 
-
-    var tagInitial = fun.substr(0,1);
+    var tagInitial = fun.substr(0,1).toLowerCase();
     if(!AtoZ[tagInitial]){
         AtoZ[tagInitial] = [];
     }
