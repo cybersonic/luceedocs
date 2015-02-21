@@ -4,7 +4,7 @@ var sortedObjects = [];
 
 for(t in objects){
     var fun = objects[t];
-    var tagInitial = t.toLowerCase();
+    var tagInitial = t;
     if(!AtoZ[tagInitial]){
         AtoZ[tagInitial] = [];
         sortedObjects.push(tagInitial);
