@@ -3,8 +3,7 @@ param name="url.exportPath" default="#expandPath("/export")#";
 
 	sep = SERVER.separator.file;
 	version=  SERVER.lucee.version;
-	xml_funlib=xmlParse('https://bitbucket.org/lucee/lucee/raw/dc1337abc3592eb16b59cb8c93e1bb7083e9d395/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0')['func-lib'];
-		
+	casings=deserializeJSON(fileRead('./export/casings.json'));	
 	
 	
 	
@@ -59,14 +58,11 @@ param name="url.exportPath" default="#expandPath("/export")#";
 	
 	
 	for(fun in getFunctionList()){
-		xml_fun=xmlSearch(xml_funlib,"./function[translate(name,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz') = '#fun#']");
 		//get our function data before we deal with casing
 		fundata = getFunctionData(fun);
 		//use our camel cased function name if it it exists for the remainder of our operations
-		if(arrayLen(xml_fun)){
-			fun=xml_fun[1].name.xmlText;
-			//lowercase our first letter for consistency
-			fun=replace(fun,left(fun,1),lcase(left(fun,1)),'one');
+		if(structKeyExists(casings.LCFunctionMap,fun)){
+			fun=casings.LCFunctionMap[fun];
 			fundata.name=fun;
 		}
 		funclist.append(fun);
