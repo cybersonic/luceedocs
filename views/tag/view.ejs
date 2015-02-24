@@ -16,13 +16,13 @@
 		}
 		if(tag.status == 'deprecated'){
 			labeltype = 'label-warning';
-		
+
 		}
 
-		
+
 	%>
 	<h3><span class="label <%= labeltype %>"><%= statusLabel %></span></h3>
-	
+
 </div>
 
 
@@ -34,7 +34,7 @@
 	</div>
 	<% } %>
 
-	
+
 	<h4>Body</h4>
 	<%
 
@@ -43,24 +43,24 @@
 		body.free = "This tag may have a body.";
 		body.required = "This tag must have a body.";
 	%>
-	
+
 	<div class="text"><%= body[tag.bodyType] %></div>
 		<% versioninfo =  version.split(".") %>
 		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
 
     <h5>
-		<% if(tag.type == 'cfml') { %> 
+		<% if(tag.type == 'cfml') { %>
 			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/tag/<%= tag.name%>.cfc" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
-			
+
 		<%}%>
 
-		<% if(tag.type == 'java') { %> 
+		<% if(tag.type == 'java') { %>
 			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/tld/web-cfmtaglibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
-				
+
 		<%}%>
     <a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/tags/cf<%= tag.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
 	<h4>Example</h4>
-	
+
 	<pre class="prettyprint"><%= tagcode %></pre>
 
 	<!-- color coded example tag -->
@@ -80,14 +80,14 @@
 		<div class="text"><%= attrinfo.type[tag.attributeType] %>
 		<% if(tag.attributeType == "dynamic") { %>
 				<% if(tag.attrMin > 0 && tag.attrMax > 0) { %>
-					<%= attrinfo.text.doc.attr.minMax.replace(/{min}/, tag.attrMin).replace(/{max}/, tag.attrMax) %> 	
+					<%= attrinfo.text.doc.attr.minMax.replace(/{min}/, tag.attrMin).replace(/{max}/, tag.attrMax) %>
 				<%} else if(tag.attrMin > 0){ %>
-						<%= attrinfo.text.doc.attr.min.replace(/{min}/, tag.attrMin) %> 
-						
+						<%= attrinfo.text.doc.attr.min.replace(/{min}/, tag.attrMin) %>
+
 				<%} else if(tag.attrMax > 0){ %>
-						<%= attrinfo.text.doc.attr.max.replace(/{max}/, tag.attrMax) %> 
-						
-				<%}%>	
+						<%= attrinfo.text.doc.attr.max.replace(/{max}/, tag.attrMax) %>
+
+				<%}%>
 		<%}%>
 		</div>
 
@@ -140,11 +140,11 @@
 				<tbody>
 					<% for(key in tag.attributes) {
 							var attr = tag.attributes[key];
-							if(attr.status == 'hidden') { 
+							if(attr.status == 'hidden') {
 								continue;
 							}
-						%>	
-						
+						%>
+
 						<tr>
 							<td><%=  key %></td>
 							<td><%=  attr.type == "object" ? "any" : attr.type %></td>
@@ -152,15 +152,30 @@
 							<td>
 							<% if(attr.status =='deprecated') { %>
 									<b class="error"> <%= attrinfo.text.doc.depAttr %></b>
-							<%} else { %>	
+							<%} else { %>
 								<%- attr.description.replace(/\n/g, "<br>") %>
-							<%}%>	
+							<%}%>
 							</td>
 						</tr>
 					<% } %>
 				</tbody>
 			</table>
 	<%}%>
+
+	<% if(examplecode && examplecode.code.length){ %>
+		<h4>Live Example</h4>
+		<div code-editor
+		    id="code-example"
+		    mode="coldfusion"
+		    engine="lucee"
+		    width="<%= examplecode.width %>"
+		    height="<%= examplecode.height %>"
+			show-options="<%= examplecode.showOptions %>"
+			code="<%= examplecode.code %>"
+			setup-code="<%= examplecode.setupCode %>"
+			show-results="<%= examplecode.showResults %>"></div>
+		<br/>
+	<% } %>
 
 <!--
 

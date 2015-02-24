@@ -1,1 +1,34 @@
-{"argMax":-1,"keywords":["number"],"arguments":[{"required":true,"status":"implemeted","name":"number","type":"number","description":"Number to find the absolute value of","defaultValue":null}],"argMin":1,"returnType":"number","status":"implemeted","name":"abs","type":"java","argumentType":"fixed","description":"Absolute-value function. The absolute value of a number is the number without its sign."}
+{
+  "argMax": -1,
+  "keywords": [
+    "number"
+  ],
+  "arguments": [
+    {
+      "required": true,
+      "status": "implemeted",
+      "name": "number",
+      "type": "number",
+      "description": "Number to find the absolute value of",
+      "defaultValue": null
+    }
+  ],
+  "argMin": 1,
+  "returnType": "number",
+  "status": "implemeted",
+  "name": "abs",
+  "type": "java",
+  "argumentType": "fixed",
+  "description": "Absolute-value function. The absolute value of a number is the number without its sign.",
+  "example": {
+  		"height" : "150px",
+		"defaultEngine": "lucee",
+		"code":	[
+		"<cfscript>",
+		"   writeOutput( abs( -300 ) );",
+		"</cfscript>"
+		]
+	}
+
+
+}

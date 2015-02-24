@@ -1,4 +1,5 @@
 var fs = require('fs');
+var util = require('util');
 
 exports.list = function(version){
 	var taglist =  JSON.parse(fs.readFileSync("./export/" + version + "/json/tags.json", "utf8"));
@@ -37,7 +38,7 @@ exports.getByFilter = function(filter, value, version){
 
 	});
 
-	
+
 	return results;
 
 }
@@ -46,14 +47,14 @@ exports.getByFilter = function(filter, value, version){
 */
 exports.toTagCode = function(tag){
 		var tout = "";
-		var tagName = tag.nameSpace + tag.nameSpaceSeperator + tag.name; 
+		var tagName = tag.nameSpace + tag.nameSpaceSeperator + tag.name;
 		if(tag.hasNameAppendix){
 			tagName += "CustomName";
 		}
 
 		tout += "<" + tagName;
 
-		
+
 		var multipleAttrs = true;
 
 
@@ -63,7 +64,7 @@ exports.toTagCode = function(tag){
 				for(key in tag.attributes){
 					tout += tag.attributes[key].type;
 				}
-				tout += " expression#";	
+				tout += " expression#";
 				multipleAttrs = false;
 		}
 		else{
@@ -77,7 +78,7 @@ exports.toTagCode = function(tag){
 		}
 
 		if(tag.bodyType == "prohibited"){
-			tout += multipleAttrs?"\n>": ">";	
+			tout += multipleAttrs?"\n>": ">";
 		}
 		else if(tag.bodyType == "free"){
 			tout += ">";
@@ -85,7 +86,7 @@ exports.toTagCode = function(tag){
 		}
 		else if(tag.bodyType == "required"){
 			tout += "\n</" + tagName + ">";
-		}	
+		}
 
 		return tout;
 }
@@ -101,14 +102,14 @@ exports.toScriptCode = function(tag){
 				for(key in tag.attributes){
 					scriptout += tag.attributes[key].type;
 				}
-				scriptout += "expression#";	
+				scriptout += "expression#";
 			}
 
 
 			else if(tag.script && tag.script.type == "single"){
 				scriptout += getAttributesAsString(tag).replace(/~~/g, "\n\t");
 			}
-			
+
 
 			if(tag.attributeType == "dynamic" || tag.attributeType == "mixed"){
 				scriptout += "...";
@@ -126,6 +127,26 @@ exports.toScriptCode = function(tag){
 			}
 			scriptout += "\n</cfscript>";
 			return scriptout;
+}
+
+exports.toExampleCode = function(fun){
+	var opts = {
+		title: "",
+		width: "100%",
+		height: "150px",
+		showOptions: true,
+		showError: true,
+		asserts: "",
+		code: "",
+		setupCode: "",
+		showResults: true
+	}
+	var example = util._extend( opts, fun.example );
+	example.code = Array.isArray( example.code ) ? example.code.join( '\n' ) : example.code;
+	example.setupCode = Array.isArray( example.setupCode ) ? example.setupCode.join( '\n' ) : example.setupCode;
+
+	return example || "";
+
 }
 
 exports.attributeTitles = function(){
@@ -163,17 +184,17 @@ exports.attributeTitles = function(){
 		return ret;
 }
 /*
-		
-	
+
+
 	<span class="syntaxAttr">#tag.getname()#</span><!--
 No Name
  --><cfif tag.getattributeType() EQ "noname"> <span class="syntaxAttr">##<cfloop array="#arrAttrNames#" index="key">#tag.getattributes()[key].type# <cfbreak></cfloop>expression##</span><!--
- 
-Single type 
- --><cfelseif tag.getscript().type EQ "single"><span class="syntaxAttr"><cfloop array="#arrAttrNames#" index="key"><cfset ss=tag.getattributes()[key].scriptSupport><cfif ss NEQ "none"> <!-- 
- --><cfif ss EQ "optional">[</cfif>#tag.getattributes()[key].type#<cfif tag.getscript().rtexpr> expression</cfif><cfif ss EQ "optional">]</cfif><cfbreak></cfif></cfloop></span><!-- 
- 
- 
+
+Single type
+ --><cfelseif tag.getscript().type EQ "single"><span class="syntaxAttr"><cfloop array="#arrAttrNames#" index="key"><cfset ss=tag.getattributes()[key].scriptSupport><cfif ss NEQ "none"> <!--
+ --><cfif ss EQ "optional">[</cfif>#tag.getattributes()[key].type#<cfif tag.getscript().rtexpr> expression</cfif><cfif ss EQ "optional">]</cfif><cfbreak></cfif></cfloop></span><!--
+
+
 multiple
 --><cfelse><cfloop array="#arrAttrNames#" index="key"><cfset attr=tag.getattributes()[key]><cfif attr.status EQ "hidden"><cfcontinue></cfif>
 	<cfif not attr.required><span class="syntaxAttr">[</span></cfif><!--
@@ -182,7 +203,7 @@ multiple
 
 --><cfif tag.getattributeType() EQ "dynamic" or tag.getattributeType() EQ "mixed"> <span class="syntaxAttr">...</span> </cfif><cfif tag.getbodyType() EQ "prohibited"><span class="syntaxAttr">;</span><cfelseif tag.getbodyType() EQ "required" or tag.getbodyType() EQ "free"><span class="syntaxAttr"> {}</span></cfif>
 
-	
+
 */
 
 
@@ -202,19 +223,19 @@ getAttributesAsString = function(tag){
 
 
 	var attributeout = "";
-	
+
 	for(attrib in sortedAttributes){
-		
+
 		var attribinfo = sortedAttributes[attrib];
 
 		if(attribinfo.status == 'hidden'){
-			continue;				
+			continue;
 		}
-		
-		attributeout += "~~"; 
-		attributeout += attribinfo.required? "" : "["; 
+
+		attributeout += "~~";
+		attributeout += attribinfo.required? "" : "[";
 		attributeout += attribinfo.name + "=\"" + attribinfo.type +"\"" ;
-		attributeout += attribinfo.required? "" : "]"; 
+		attributeout += attribinfo.required? "" : "]";
 	}
 	return attributeout;
 }

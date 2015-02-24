@@ -41,8 +41,9 @@ exports.get = function(req, res){
 		tagcode: fun.toTagCode(functionData),
 		scriptcode: fun.toTagCode(functionData),
 		arginfo : fun.argumentTitles(),
-		argumentcode : fun.toArgumentString(functionData)
-		
+		argumentcode : fun.toArgumentString(functionData),
+		examplecode : fun.toExampleCode(functionData)
+
 	});
 
 };

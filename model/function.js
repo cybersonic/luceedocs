@@ -1,5 +1,5 @@
 var fs = require('fs');
-
+var util = require('util');
 
 var cachedFuncs = {};
 
@@ -66,6 +66,26 @@ exports.toTagCode = function(fun){
 		tagcode+= "):" + fun.returnType;
 
 	return tagcode ;
+}
+
+exports.toExampleCode = function(fun){
+	var opts = {
+		title: "",
+		width: "100%",
+		height: "150px",
+		showOptions: true,
+		showError: true,
+		asserts: "",
+		code: "",
+		setupCode: "",
+		showResults: true
+	}
+	var example = util._extend( opts, fun.example );
+	example.code = Array.isArray( example.code ) ? example.code.join( '\n' ) : example.code;
+	example.setupCode = Array.isArray( example.setupCode ) ? example.setupCode.join( '\n' ) : example.setupCode;
+
+	return example || "";
+
 }
 
 exports.toObjectCode = function(fun){
