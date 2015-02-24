@@ -13,7 +13,7 @@ exports.list = function(req, res){
 
 	if(util.isApi(req)){
 		res.json(taglist);
-		return;	
+		return;
 	}
 	res.locals.title = "Lucee Tag Documentation";
 	res.render('tag/list', { tags: taglist, version: currentversion });
@@ -39,7 +39,7 @@ exports.get = function(req, res){
 
 	if(util.isApi(req)){
 			res.json(tagdata);
-			return;	
+			return;
 	}
 
 	res.locals.title = "Lucee "+ id +" Tag Documentation";
@@ -48,6 +48,7 @@ exports.get = function(req, res){
 		 version: currentversion,
 		 tagcode:tag.toTagCode(tagdata),
 		 scriptcode:tag.toScriptCode(tagdata),
+		 examplecode:tag.toExampleCode(tagdata),
 		 attrinfo : tag.attributeTitles()
 		});
 };
