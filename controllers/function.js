@@ -34,6 +34,7 @@ exports.get = function(req, res){
 		res.json(functionData);
 		return;
 	}
+
 	res.locals.title = "Lucee " + id.capitalize() + " Function Documentation";
 	res.render('function/view', {
 		func : functionData,

@@ -146,19 +146,23 @@
 		</table>
 	<% } %>
 
-	<% if(examplecode && examplecode.code.length){ %>
+	<% if(examplecode && (examplecode.code.length||examplecode.codeGist.length)){ %>
 		<h4>Live Example</h4>
+		<% if(examplecode.codeGist.length){ %>
+			<a href="https://gist.github.com/<%= examplecode.codeGist %>" target="_blank">View on Github <span class="glyphicon glyphicon-new-window"></span></a> <span>(to suggest a change, fork this gist and submit PR)</span>
+		<% } %>
 		<div code-editor
-		    id="code-example"
-		    mode="coldfusion"
-		    engine="lucee"
-		    width="<%= examplecode.width %>"
-		    height="<%= examplecode.height %>"
+			id="code-example"
+			mode="coldfusion"
+			engine="lucee"
+			width="<%= examplecode.width %>"
+			height="<%= examplecode.height %>"
 			show-options="<%= examplecode.showOptions %>"
+			code-gist="<%= examplecode.codeGist %>"
 			code="<%= examplecode.code %>"
 			setup-code="<%= examplecode.setupCode %>"
+			setup-code-gist="<%= examplecode.setupCodeGist %>"
 			show-results="<%= examplecode.showResults %>"></div>
-		<br/>
 	<% } %>
 
 	<% if(process.env.NODE_ENV && process.env.NODE_ENV == 'production'){ %>

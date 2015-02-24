@@ -23,11 +23,8 @@
   "example": {
   		"height" : "150px",
 		"defaultEngine": "lucee",
-		"code":	[
-		"<cfscript>",
-		"   writeOutput( abs( -300 ) );",
-		"</cfscript>"
-		]
+    "codeGist": "a2b43a10500787a3a5fe",
+    "setupCodeGist": "dea412c588736c9cf3c1"
 	}
 
 

@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2013, Abram Adams
+	Copyright (c) 2013-2015, Abram Adams
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ angular.module('code.editor', [])
 	'		    <div class="split-pane-component" id="left-component">'+
 	'		        <div class="decoration">'+
 	'					<form id="form-{{id}}" target="results-{{id}}" method="post" enctype="multipart/form-data" class="code-form">'+
-	'						<input type="hidden" name="setupcode" id="setupcode" value="{{setupcode}}"/>'+
+	'						<input type="hidden" name="setupcode" id="setupcode" value="{{setupCode}}"/>'+
 	'						<input type="hidden" name="code" id="code" value="{{code}}"/>'+
 	'						<input type="hidden" name="postcode" id="postcode" value="{{postcode}}"/>'+
 	'						<input type="hidden" name="key" id="key" value="{{id}}'+ uid +'"/>'+
@@ -142,7 +142,9 @@ angular.module('code.editor', [])
 			showError: '@showError',
 			asserts: '@asserts',
 			code: '@code',
-			setupcode: '@setupCode',
+			codeGist: '@codeGist',
+			setupCode: '@setupCode',
+			setupCodeGist: '@setupCodeGist',
 			postcode: '@postcode',
 			showResults: '@showResults'
 		},
@@ -162,6 +164,9 @@ angular.module('code.editor', [])
 			// LINK:
 			return function( scope, element, attrs ){
 				scope.code = attrs.code;
+				scope.codeGist = attrs.codeGist;
+				scope.setupCode = attrs.setupCode;
+				scope.setupCodeGist = attrs.setupCodeGist;
 				scope.asserts = attrs.asserts;
 				scope.fullscreen = attrs.fullscreen;
 				scope.engines = {'acf':'Adobe ColdFusion 10', 'railo':'Railo 4.2', 'lucee':'Lucee 4.5'};
@@ -170,6 +175,7 @@ angular.module('code.editor', [])
 				// Setup dom pointers.
 				var editor = element.find('.code-editor'),
 					codeForm = element.find('.code-form'),
+					setupCode = element.find('#setupcode'),
 					results = element.find('.results'),
 					resultsDiv = element.find('.results-div'),
 					resultsWrapper = element.find('.results-wrapper'),
@@ -197,7 +203,6 @@ angular.module('code.editor', [])
         			    "lucee" : [ 'http://sbx-lucee.aws.af.cm/getremote.cfm' ],
                     	"acf" 	: [ 'http://acf-sbx.jelastic.servint.net/getremote.cfm' ]
                     },
-
                     url = attrs.url || urlPool[scope.engine][Math.floor(Math.random()*urlPool[scope.engine].length)];
                 displayEngine();
 				theme = theme.toLowerCase();
@@ -245,16 +250,30 @@ angular.module('code.editor', [])
 				    }
 				});
 
-
 			    /* Enable Auto-complete */
 				var langTools = ace.require("ace/ext/language_tools");
 
 				element.find('#engine').val(scope.engine);
 
-
 				scope.$watch('code', function(){
 					session.setValue(scope.code);
 				});
+				// Load Gist if id was supplied
+				if( scope.codeGist && scope.codeGist.length > 0){
+					loadGist( scope.codeGist ).then( function(data){
+						var filename = Object.keys(data.files)[0];
+						scope.code = data.files[filename].content;
+						session.setValue(scope.code);
+					} );
+				}
+				if( scope.setupCodeGist && scope.setupCodeGist.length > 0 ){
+					loadGist( scope.setupCodeGist ).then( function(data){
+						var filename = Object.keys(data.files)[0];
+						scope.setupCodeGist = data.files[filename].content;
+						setupCode.val(scope.setupCodeGist);
+					} );
+				}
+
 				// Set the editor's initial value
 				session.setValue(scope.code);
 				aceEditor.on('change',function(e){
@@ -266,9 +285,7 @@ angular.module('code.editor', [])
 					$('#code',codeForm).val(scope.code);
 					$('#'+attrs.fieldname).val(scope.code);
 
-
 				});
-
 
 				// Enable split pane
 				splitPane.splitPane();
@@ -345,7 +362,6 @@ angular.module('code.editor', [])
 				resultsWrapper.on('mouseout',function(){
 					resultsLabel.fadeTo('fast',0.3);
 				});
-				//toggleFullscreenBtn.on('click',toggleFullscreen);
 
 				element.find('.editor-options').on('click',function(e){
 					e.preventDefault();
@@ -367,6 +383,10 @@ angular.module('code.editor', [])
 					displayEngineSpan.html( scope.engines[scope.engine] );
 				}
 				function saveGist(){
+					// if( scope.codeGist !== '' ){
+					// 	forkGist( scope.codeGist );
+					// 	return;
+					// }
 					var data = {
 				        "description": "TryCF Gist",
 				        "public": true,
@@ -388,6 +408,34 @@ angular.module('code.editor', [])
 				      .error( function(e) {
 				        console.warn("gist save error", e);
 				        message.html('<span class="alert alert-danger" style="padding: 5px;margin: 5px 0 0 3px;display: inline-block;"><i class="icon-warning-sign icon-white"></i> Couldn\'t save Gist: '+e.detail+'</span>');
+				      });
+				}
+				// requires oauth to post on user's behalf
+				// function forkGist( gistId ){
+				//       $.ajax({
+				//         url: 'https://api.github.com/gists/'+gistId+'/forks',
+				//         type: 'POST'
+				//       })
+				//       .success( function( response ) {
+				//         message.html('<span class="alert alert-inverted" style="padding: 5px;margin: 5px 0 0 3px;display: inline-block;"><i class="icon-check icon-white"></i> Forked Gist: <a href="http://trycf.com/gist/'+ response.id +'/'+scope.engine+'">'+response.id+'</a></span>');
+				//       })
+				//       .error( function(e) {
+				//         console.warn("gist save error", e);
+				//         message.html('<span class="alert alert-danger" style="padding: 5px;margin: 5px 0 0 3px;display: inline-block;"><i class="icon-warning-sign icon-white"></i> Couldn\'t save Gist: '+e.detail+'</span>');
+				//       });
+				// }
+				function loadGist( gistId ){
+					return $.ajax({
+				        url: 'https://api.github.com/gists/'+gistId,
+				        type: 'GET',
+				        dataType: 'json'
+				      })
+				      .success( function( response ) {
+				      	var filename = Object.keys(response.files)[0];
+						return response.files[filename].content;
+				      })
+				      .error( function(e) {
+				        console.warn("gist save error", e);
 				      });
 				}
 				// This fires when the results pane is updated with the response

@@ -131,17 +131,27 @@ exports.toScriptCode = function(tag){
 
 exports.toExampleCode = function(fun){
 	var opts = {
-		title: "",
-		width: "100%",
-		height: "150px",
-		showOptions: true,
-		showError: true,
-		asserts: "",
-		code: "",
-		setupCode: "",
-		showResults: true
+		width: "100%", // editor width in px or %
+		height: "150px", // editor height in px or %
+		showOptions: true, // true = show/false = hide. Controls option button to change theme/engine
+		showError: true,  // true = show/false = hide. Shows or supresses error messages.
+		code: "", /* string or array containing code to render inside editor.
+					 If an array it will first be parsed into a return delimited string (for formatted display).
+					 This is to make JSON friendly formatted code.  Otherwise everything has to be in one line.
+					 Array Example:
+					 code: [
+					 "<cfscript>",
+					 "    dump(server);",
+					 "</cfscript>",
+					 ]
+				  */
+		codeGist: "", // Gist ID of code.  If exists, will override any passed in "code" attribute
+		setupCode: "", // string or array (same as "code").  This code is used for exposing any variables/functions that the user will not see but can interact with.
+		setupCodeGist: "", // Gist ID of setup code. If exists, will override any passed in "setupCode" attribute
+		showResults: true // true = show/false = hide.  If false will render a single code formatted box without the ability to run the code.
 	}
 	var example = util._extend( opts, fun.example );
+	// Concat array into formatted string.
 	example.code = Array.isArray( example.code ) ? example.code.join( '\n' ) : example.code;
 	example.setupCode = Array.isArray( example.setupCode ) ? example.setupCode.join( '\n' ) : example.setupCode;
 
