@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
       <title><%= title %></title>
@@ -13,13 +13,29 @@
     <link href="/assets_30/css/jquery-ui.css" rel="stylesheet" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="/assets/css/font-mfizz/font-mfizz.css" rel="stylesheet">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="/assets/js/trycf/vendor/plugins/split-pane/split-pane.css" rel="stylesheet">
+    <link href="/assets/js/trycf/code-editor.css" rel="stylesheet">
     <script src="/assets_30/js/jquery.js"></script>
     <script src="/assets_30/js/bootstrap.js"></script>
     <script src="/assets_30/js/typeahead.min.js"></script>
     <script src="/assets_30/js/jquery-ui.js"></script>
     <script src="/assets_30/js/application.js"></script>
     <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+    <!-- TryCF Editor Scripts -->
+    <!-- Ace Editor -->
+    <script src="/assets/js/trycf/vendor/ace/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <!-- load ace language tools & utility -->
+    <script src="/assets/js/trycf/vendor/ace/src-min/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/assets/js/trycf/vendor/ace/src-min/snippets/coldfusion.js"></script>
+    <script src="/assets/js/trycf/vendor/plugins/split-pane/split-pane.js"></script>
+    <!-- Angular JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.8/angular.min.js"></script>
+    <!-- Directives -->
+    <script src="/assets/js/trycf/code-editor.js"></script>
+    <script src="/assets/js/trycf/trycf.js"></script>
+    <!-- // TryCF Editor Scripts -->
+
 
   </head>
   <body>
@@ -31,7 +47,7 @@
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>        
+        <span class="icon-bar"></span>
       </div> <!-- navbar-header -->
 
       <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -50,11 +66,10 @@
 
           </ul>
 
-      
 
           <form class="navbar-form navbar-left" role="search" id="searchform" action="/search" method="GET">
             <div class="form-group">
-            <input type="text" id="searchresults" class="form-control" placeholder="Search" name="term">
+            <input type="text" id="searchresults" class="form-control input-sm" placeholder="Search" name="term">
             </div>
           </form>
       </div>
@@ -63,9 +78,8 @@
   <div class="container">
 
     <div class="row">
-        
+
         <div class="col-md-12">
-          
 
 
 
@@ -73,7 +87,7 @@
         </div>
       </div> <!-- row -->
     </div> <!-- container -->
-    
+
     <footer class="footer">
       <hr>
       <div class="container">

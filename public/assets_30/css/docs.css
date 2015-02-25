@@ -18,6 +18,9 @@ body {
 	width: 140px;
 	min-height: 65px;
 }
+#searchform {
+	margin-top: 10px;
+}
 .jumbotron{
 	background: #01798a;
 	color: white;
@@ -38,8 +41,9 @@ body {
 	top:30px;
 }
 /** Autocomplete search adjustment **/
-.ui-autocomplete {
-	margin-top: 75px;
+#ui-id-1.ui-autocomplete {
+	position: absolute;
+	z-index: 5000;
 }
 /**In-Page Positional Anchors - to offset fixed nav**/
 .anchor:before {

@@ -2,9 +2,6 @@
  var tag = require('../model/tag.js');
  var ejs = require('ejs');
  var util = require('./util.js');
- var marked=require('marked');
-
-
 
 exports.list = function(req, res){
 	var currentversion = version.current();
@@ -16,7 +13,7 @@ exports.list = function(req, res){
 
 	if(util.isApi(req)){
 		res.json(taglist);
-		return;	
+		return;
 	}
 	res.locals.title = "Lucee Tag Documentation";
 	res.render('tag/list', { tags: taglist, version: currentversion });
@@ -27,9 +24,10 @@ exports.get = function(req, res){
 
 	var id = util.stripJSONSuffix(req.params.id);
 	var currentversion = version.current();
+    var marked=require('marked');
 
 
-	var cleansedTag = util.cleanTag(id)
+    var cleansedTag = util.cleanTag(id)
 
 	if (cleansedTag === undefined) {
 		return res.render('404', {status: 404, url: req.url});
@@ -45,12 +43,10 @@ exports.get = function(req, res){
 
 	if(util.isApi(req)){
 			res.json(tagdata);
-			return;	
+			return;
 	}
+
 	res.locals.title = "Lucee "+ id +" Tag Documentation";
-
-
-
 	res.render('tag/view', {
 		 tag : tagdata,
 		 version: currentversion,
@@ -58,9 +54,11 @@ exports.get = function(req, res){
          examples:[],
 		 tagcode:tag.toTagCode(tagdata),
 		 scriptcode:tag.toScriptCode(tagdata),
+		 examplecode:tag.toExampleCode(tagdata),
 		 attrinfo : tag.attributeTitles(),
-		 renderMarkdown : marked
-		});
+         renderMarkdown : marked
+
+    });
 };
 
 

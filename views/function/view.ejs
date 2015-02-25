@@ -17,13 +17,13 @@
 		}
 		if(func.status == 'deprecated'){
 			labeltype = 'label-warning';
-		
+
 		}
 
-		
+
 	%>
 	<h3><span class="label <%= labeltype %>"><%= statusLabel %></span></h3>
-	
+
 </div>
 
 
@@ -40,12 +40,13 @@
         <h5>
 		<% if(func.type == 'cfml') { %> 
 			
+
 			<%
 				//try and get the proper case sensitive name for this. WE can get it from the source attrib
 				var caseinsensitivename = func.source.split("/");
-				
+
 			%>
-		
+
 			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a><
 			
 		<%}%>
@@ -57,6 +58,7 @@
 
 
     <h4>Example</h4>
+
 	<pre class="prettyprint"><%= tagcode %></pre>
 
 	<% if(func.member && Object.keys(func.member).length){ %>
@@ -149,6 +151,25 @@
 	<% if(func.description.length > 300){ %>
 	<h4 class="anchor" id="longdesc">Full Description</h4>
 	<p><%- renderMarkdown(func.description) %></p>
+	<% } %>
+
+	<% if(examplecode && (examplecode.code.length||examplecode.codeGist.length)){ %>
+		<h4>Live Example</h4>
+		<% if(examplecode.codeGist.length){ %>
+			<a href="https://gist.github.com/<%= examplecode.codeGist %>" target="_blank">View on Github <span class="glyphicon glyphicon-new-window"></span></a> <span>(to suggest a change, fork this gist and submit PR)</span>
+		<% } %>
+		<div code-editor
+			id="code-example"
+			mode="coldfusion"
+			engine="lucee"
+			width="<%= examplecode.width %>"
+			height="<%= examplecode.height %>"
+			show-options="<%= examplecode.showOptions %>"
+			code-gist="<%= examplecode.codeGist %>"
+			code="<%= examplecode.code %>"
+			setup-code="<%= examplecode.setupCode %>"
+			setup-code-gist="<%= examplecode.setupCodeGist %>"
+			show-results="<%= examplecode.showResults %>"></div>
 	<% } %>
 
 	<% if(process.env.NODE_ENV && process.env.NODE_ENV == 'production'){ %>
