@@ -8,7 +8,7 @@
 	</p>
 	<%
 		String.prototype.capitalize = function() {
-    		return this.charAt(0).toUpperCase() + this.slice(1);
+			return this.charAt(0).toUpperCase() + this.slice(1);
 		}
 		var labeltype = 'label-default';
 		var statusLabel = tag.status.capitalize();
@@ -18,51 +18,51 @@
 		}
 		if(tag.status == 'deprecated'){
 			labeltype = 'label-warning';
-		
+
 		}
 
-		
+
 	%>
 	<h3><span class="label <%= labeltype %>"><%= statusLabel %></span></h3>
-	
+
 </div>
 
 
 <section id="tag_description">
- 	<hr>
+	<hr>
 	<% if(tag.status=='deprecated'){ %>
 	<div class="alert alert-info">
 		 <strong>Warning!</strong> This tag has been deprecated
 	</div>
 	<% } %>
 
-	
+
 	<h4>Body</h4>
 	<%
 
 		var body = {};
-		body.prohibited = "This tag can't have a body.";
+		body.prohibited = "This tag cannot have a body.";
 		body.free = "This tag may have a body.";
 		body.required = "This tag must have a body.";
 	%>
-	
+
 	<div class="text"><%= body[tag.bodyType] %></div>
 		<% versioninfo =  version.split(".") %>
 		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
 
-    <h5>
-		<% if(tag.type == 'cfml') { %> 
+	<h5>
+		<% if(tag.type == 'cfml') { %>
 			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/tag/<%= tag.name%>.cfc" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a></h5>
-			
+
 		<%}%>
 
-		<% if(tag.type == 'java') { %> 
+		<% if(tag.type == 'java') { %>
 			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/tld/web-cfmtaglibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
-				
+
 		<%}%>
-    <a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/tags/cf<%= tag.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
+	<a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/tags/cf<%= tag.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
 	<h4>Example</h4>
-	
+
 	<pre class="prettyprint"><%= tagcode %></pre>
 
 	<!-- color coded example tag -->
@@ -82,14 +82,14 @@
 		<div class="text"><%= attrinfo.type[tag.attributeType] %>
 		<% if(tag.attributeType == "dynamic") { %>
 				<% if(tag.attrMin > 0 && tag.attrMax > 0) { %>
-					<%= attrinfo.text.doc.attr.minMax.replace(/{min}/, tag.attrMin).replace(/{max}/, tag.attrMax) %> 	
+					<%= attrinfo.text.doc.attr.minMax.replace(/{min}/, tag.attrMin).replace(/{max}/, tag.attrMax) %>
 				<%} else if(tag.attrMin > 0){ %>
-						<%= attrinfo.text.doc.attr.min.replace(/{min}/, tag.attrMin) %> 
-						
+						<%= attrinfo.text.doc.attr.min.replace(/{min}/, tag.attrMin) %>
+
 				<%} else if(tag.attrMax > 0){ %>
-						<%= attrinfo.text.doc.attr.max.replace(/{max}/, tag.attrMax) %> 
-						
-				<%}%>	
+						<%= attrinfo.text.doc.attr.max.replace(/{max}/, tag.attrMax) %>
+
+				<%}%>
 		<%}%>
 		</div>
 
@@ -142,11 +142,11 @@
 				<tbody>
 					<% for(key in tag.attributes) {
 							var attr = tag.attributes[key];
-							if(attr.status == 'hidden') { 
+							if(attr.status == 'hidden') {
 								continue;
 							}
-						%>	
-						
+						%>
+
 						<tr>
 							<td><%=  key %></td>
 							<td><%=  attr.type == "object" ? "any" : attr.type %></td>
@@ -154,45 +154,39 @@
 							<td>
 							<% if(attr.status =='deprecated') { %>
 									<b class="error"> <%= attrinfo.text.doc.depAttr %></b>
-							<%} else { %>	
+							<%} else { %>
 								<%- attr.description.replace(/\n/g, "<br>") %>
-							<%}%>	
+							<%}%>
 							</td>
 						</tr>
 					<% } %>
 				</tbody>
 			</table>
 	<%}%>
-
 	<% if(tag.description.length > 300){ %>
 	<h4 class="anchor" id="longdesc">Full Description</h4>
 	<p><%- renderMarkdown(tag.description) %></p>
 	<% } %>
-
-<!--
-
-		<script>
-			$(function(){
-					$.ajax("#buildURL("/issues/search/term/cf#rc.item#")#", {
-						accepts: "JSON",
-						beforeSend: function(){
-							$("##JiraCount").html('<i class="icon-spinner icon-spin icon-large"></i> Checking ');
-						},
-						success: function(data) {
-							$("##JiraCount").html(data.resultcount + ' ');
-						}
-					});
-
-
-				});
-		</script>
-		<h4><span id="JiraCount"></span>Active Jira Issues <a href="https://issues.jboss.org/issues/?jql=text%20~%20%22cf#rc.item#%22%20AND%20project%3DLucee%20ANd%20status%20!%3D%20Closed%20AND%20status%20!%3D%20Resolved" target="_new">View <i class="icon-search"></i></a></h4>
-
-		<table>
+	<% if(examplecode && examplecode.code.length){ %>
+		<h4>Live Example</h4>
+		<% if(examplecode.codeGist.length){ %>
+			<a href="https://gist.github.com/<%= examplecode.codeGist %>" target="_blank">View on Github <span class="glyphicon glyphicon-new-window"></span></a> <span>(to suggest a change, fork this gist and submit PR)</span>
+		<% } %>
+		<div code-editor
+			id="code-example"
+			mode="coldfusion"
+			engine="lucee"
+			width="<%= examplecode.width %>"
+			height="<%= examplecode.height %>"
+			show-options="<%= examplecode.showOptions %>"
+			code-gist="<%= examplecode.codeGist %>"
+			code="<%= examplecode.code %>"
+			setup-code="<%= examplecode.setupCode %>"
+			setup-code-gist="<%= examplecode.setupCodeGist %>"
+			show-results="<%= examplecode.showResults %>"></div>
+	<% } %>
 
 
-		</table>
--->
  </section>
 	<hr>
 	<% if(process.env.NODE_ENV && process.env.NODE_ENV == 'production'){ %>
@@ -200,17 +194,17 @@
 
  <div class="well">
 			<div id="disqus_thread"></div>
-		    <script type="text/javascript">
-		        var disqus_shortname = 'Luceedocs';
+			<script type="text/javascript">
+				var disqus_shortname = 'Luceedocs';
 				var disqus_identifier = "tag_<%= tag.name %>";
 
-		        (function() {
-		            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-		            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		        })();
-		    </script>
-		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+				(function() {
+					var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 		</div>
  <% } %>
