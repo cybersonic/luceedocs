@@ -1,0 +1,43 @@
+<%
+
+    var name = tag.name ? tag.name :  func.name;
+
+%>
+
+
+<!-- Modal -->
+<div class="modal fade" id="suggestForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contribute code examples</h4>
+            </div>
+            <div class="modal-body">
+               Want to add a code example to this page? You can do this by:
+                <ol>
+                    <form action="/examples/add" method="post">
+                        <input type="text" name="version" value="<%= version%>"/>
+                        <input type="text" name="type" value="<%= type%>"/>
+                        <input type="text" name="name" value="<%= name%>"/>
+                    <li><a href="https://gist.github.com/" target="_blank">Create a Gist in Github</a></li>
+                    <li>Copy the GistID<br>
+                        <img src="/images//gistid.png" width="400">
+
+                    </li>
+                    <li>Paste it here and submit it: <input type="text" name="gistid" placeholder="Gist ID"><button class="btn" type="submit">Send</button> </li>
+                    </form>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#suggestForm">
+    Suggest an example via Gist <span class="fa glyphicon-pencil"></span>
+</button>

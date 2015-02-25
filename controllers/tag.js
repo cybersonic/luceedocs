@@ -2,6 +2,9 @@
  var tag = require('../model/tag.js');
  var ejs = require('ejs');
  var util = require('./util.js');
+ var marked=require('marked');
+
+
 
 exports.list = function(req, res){
 	var currentversion = version.current();
@@ -24,7 +27,7 @@ exports.get = function(req, res){
 
 	var id = util.stripJSONSuffix(req.params.id);
 	var currentversion = version.current();
-	var marked=require('marked');
+
 
 	var cleansedTag = util.cleanTag(id)
 
@@ -34,6 +37,8 @@ exports.get = function(req, res){
 
 	var tagdata = tag.get(cleansedTag, currentversion);
 
+
+
 	if (tagdata === undefined) {
 		return res.render('404', { status: 404, url: req.url });
 	}
@@ -42,11 +47,15 @@ exports.get = function(req, res){
 			res.json(tagdata);
 			return;	
 	}
-
 	res.locals.title = "Lucee "+ id +" Tag Documentation";
+
+
+
 	res.render('tag/view', {
 		 tag : tagdata,
 		 version: currentversion,
+         type: "tag",
+         examples:[],
 		 tagcode:tag.toTagCode(tagdata),
 		 scriptcode:tag.toScriptCode(tagdata),
 		 attrinfo : tag.attributeTitles(),

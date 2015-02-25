@@ -39,6 +39,7 @@ exports.get = function(req, res){
 	res.render('function/view', {
 		func : functionData,
 		version: currentversion,
+        type: 'function',
 		tagcode: fun.toTagCode(functionData),
 		scriptcode: fun.toTagCode(functionData),
 		arginfo : fun.argumentTitles(),
