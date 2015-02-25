@@ -1,7 +1,7 @@
- var version = require('../model/version.js');
- var tag = require('../model/tag.js');
+ var version = require('../../model/version.js');
+ var tag = require('../../model/tag.js');
  var ejs = require('ejs');
- var util = require('./util.js');
+ var util = require('./../../controllers/util.js');
 
 exports.list = function(req, res){
 	var currentversion = version.current();

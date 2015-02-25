@@ -1,4 +1,4 @@
-var version = require("../model/version.js");
+var version = require("../../model/version.js");
 var moment = require('moment');
 
 

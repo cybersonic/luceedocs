@@ -1,4 +1,4 @@
-var version = require('../model/version.js');
+var version = require('../../model/version.js');
 
 exports.index = function(req,res){
 
@@ -10,4 +10,5 @@ exports.before = function(req,res, next){
 	res.locals.title = "Lucee Documentation";
 	res.locals.version = version.current();
  	next();
+
 }

@@ -1,6 +1,6 @@
-var version = require('../model/version.js');
-var fun = require('../model/function.js');
-var util = require('./util.js');
+var version = require('../../model/version.js');
+var fun = require('../../model/function.js');
+var util = require('./../../controllers/util.js');
 
 
 

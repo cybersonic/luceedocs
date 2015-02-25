@@ -2,9 +2,9 @@ var config = require('./config');
     mongoose = require('mongoose');
 
 module.exports = function(){
-    var db = monguse.connect(config.db);
+    var db = mongoose.connect(config.db);
 
-    reequire("../models/example.model.js");
+    require("../app/models/gist.model.js");
     return db;
 
 }
