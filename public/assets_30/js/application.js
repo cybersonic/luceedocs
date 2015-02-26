@@ -63,4 +63,22 @@
         });
 
 
+            $("#addgist").on('submit', function(e){
+                e.preventDefault();
+
+                var action = $(e.target).attr('action');
+
+
+                $.post(action, $(e.target).serialize(), function(data, textStatus, jqXHR){
+
+
+                    if(data.status == 'fail'){
+                        $("#gistid-div").addClass("has-error");
+                        $("#gistid-label").text(data.error);
+                    }
+                    console.log(data.status == 'fail');
+                });
+
+            });
+
     });

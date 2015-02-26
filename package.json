@@ -23,6 +23,7 @@
     "ejs2": "^2.1.0",
     "express": "^4.10.2",
     "express-ejs-layouts": "^1.1.0",
+    "gist": "^0.2.0",
     "marked": "^0.3.2",
     "moment": "^2.8.4",
     "mongodb": "^1.4.31",
