@@ -1,0 +1,84 @@
+
+<%
+var AtoZ = {};
+
+for(t in functions){
+    var fun = functions[t];
+
+    var tagInitial = fun.substr(0,1).toLowerCase();
+    if(!AtoZ[tagInitial]){
+        AtoZ[tagInitial] = [];
+    }
+    AtoZ[tagInitial].push(fun);
+}
+%>
+
+<section id="tags">
+    <div class="page-header">
+        <h2>Functions</h2>
+        <p class="lead">Lucee Server provides you with a huge number of functions, nearly 600 of them in fact! You can use Functions simply to get access to the core functionality to modify code as well as accessing external systems
+        </p>
+
+
+
+        <cfoutput>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-justified">
+                        <% for(initial in AtoZ) { %>
+
+                        <li class="btn btn-default btn-xs"><a href="<%= "#" + initial %>"><%= initial %></a></li>
+
+                        <% } %>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+    </div>
+
+
+    <cfset cols=3>
+        <cfset counter = 1>
+            <div class="row">
+                <% for(initial in AtoZ) { %>
+
+                <div class="anchor col-sm-4" id="<%= initial %>">
+                    <h4><%= initial.toUpperCase() %></h4>
+                    <cfset items = list.getItemsInGroup(al)>
+
+                        <ul class="list list-unstyled">
+                            <% for(t in AtoZ[initial]) {%>
+                            <% var tag = AtoZ[initial][t]%>
+                            <li>
+                                <a href="/function/<%= tag %>">
+
+                                    <%= tag %>
+
+
+                                </a>
+                            </li>
+                            <% } %>
+                        </ul>
+                </div>
+
+                <!--<cfif (counter MOD 3) EQ 0>-->
+                <!--</div>-->
+                <!--<hr>-->
+                <!--<div class="row">-->
+                <!--</cfif>-->
+                <!---->
+
+
+                <% } %>
+            </div>
+
+            </cfoutput>
+</section>
+
+
+

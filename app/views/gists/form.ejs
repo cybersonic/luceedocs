@@ -1,0 +1,50 @@
+<%
+
+    var name = tag.name ? tag.name :  func.name;
+
+%>
+
+
+<!-- Modal -->
+<div class="modal fade" id="suggestForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Contribute code examples</h4>
+            </div>
+            <form action="/gists/add" method="post" id="addgist">
+            <div class="modal-body">
+               Want to add a code example to this page? You can do this by:
+                <ol>
+
+                        <input type="text" name="version" value="<%= version%>"/>
+                        <input type="text" name="type" value="<%= type%>"/>
+                        <input type="text" name="name" value="<%= name%>"/>
+                    <li><a href="https://gist.github.com/" target="_blank">Create a Gist in Github</a></li>
+                    <li>Copy the GistID<br>
+                        <img src="/images//gistid.png" width="400">
+
+                    </li>
+                    <li>
+                        <div class="form-group" id="gistid-div">
+                            <label class="control-label" for="gistid-label" id="gistid-label">Paste it here and submit it: </label>
+                            <input type="text" name="gistid" id="gistid" placeholder="Gist ID">
+                        </div>
+
+                    </li>
+
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#suggestForm">
+    Suggest an example via Gist <span class="fa glyphicon-pencil"></span>
+</button>

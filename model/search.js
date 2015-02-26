@@ -12,13 +12,13 @@ var indexeditems = [];
 //Main search function
 exports.find = function(term){
 
-    if(!term || !term.length){
-        return [];
-    }
+        if(!term || !term.length){
+            return [];
+        }
 
 
         if(!indexeditems.length){
-            console.log("indexing things");
+
             this.index();
         }
         var results = []
@@ -34,14 +34,13 @@ exports.find = function(term){
 
 
 exports.index = function(){
-        console.log("Indexing the search collection")
 
         var versionString = version.current();
         var tagList = tags.list(versionString);
         var funcList = functions.list(versionString);
         var objList = functions.listObjects(versionString);
 
-        console.log(objList);
+
         tagList.forEach(function(item){
             indexeditems.push(item.toLowerCase());
 

@@ -1,0 +1,73 @@
+	<%
+		var tagsAtoZ = {};
+
+		for(t in tags){
+			var tag = tags[t];
+
+
+			var tagInitial = tag.substr(2,1).toLowerCase();
+			if(!tagsAtoZ[tagInitial]){
+				tagsAtoZ[tagInitial] = [];
+			}
+			tagsAtoZ[tagInitial].push(tag);
+		}
+ 	%>
+
+<section id="tags">
+	<div class="page-header">
+		 <h2>Tags </h2>
+		 <p class="lead">Tags are the core of Lucee Server.
+		</p>
+	
+
+
+	
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="nav nav-justified">
+				<% for(initial in tagsAtoZ) { %>
+
+				<li class="btn btn-default btn-xs"><a href="<%= "#" + initial %>"><%= initial %></a></li>
+
+				<% } %>
+
+			</ul>
+		</div>
+	</div>
+	
+
+
+
+	</div>
+
+
+
+	<div class="row">
+		<% for(initial in tagsAtoZ) { %>
+
+		<div class="anchor col-sm-4" id="<%= initial %>">
+				<h4><%= initial.toUpperCase() %></h4>
+				<cfset items = list.getItemsInGroup(al)>
+				
+				<ul class="list list-unstyled">
+					<% for(t in tagsAtoZ[initial]) {%>
+					<% var tag = tagsAtoZ[initial][t]%>
+						<li>
+							<a href="/tag/<%= tag %>">
+
+								<%= tag %>
+
+
+							</a>
+						</li>
+					<% } %>
+				</ul>
+			</div>
+		<% } %>
+	</div>
+
+</section>
+
+
+	
+	

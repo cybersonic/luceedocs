@@ -1,0 +1,193 @@
+<style>
+	.syntaxAttr={color:maroon;}
+</style>
+<div class="jumbotron">
+	<h1><%= func.name %> </h1>
+	<p><%- func.description.length < 300?renderMarkdown(func.description):func.description.split("\n")[0]+'<a href="#longdesc">[Read More]</a>' %></p>
+	<p>Returns: <%= func.returnType %></p>
+	<%
+		String.prototype.capitalize = function() {
+    		return this.charAt(0).toUpperCase() + this.slice(1);
+		}
+		var labeltype = 'label-default';
+		var statusLabel = func.status.capitalize();
+		if(func.status == 'implemented' || func.status == 'implemeted'){
+			labeltype = 'label-success';
+			statusLabel = 'Implemented';
+		}
+		if(func.status == 'deprecated'){
+			labeltype = 'label-warning';
+
+		}
+
+
+	%>
+	<h3><span class="label <%= labeltype %>"><%= statusLabel %></span></h3>
+
+</div>
+
+
+<section id="fun_description">
+ 	<hr>
+	<% if(func.status=='deprecated'){ %>
+	<div class="alert alert-info">
+		 <strong>Warning!</strong> This function has been deprecated
+	</div>
+	<% } %>
+
+		<% versioninfo =  version.split(".") %>
+		<% majmin = 'dc1337abc3592eb16b59cb8c93e1bb7083e9d395'; %>
+        <h5>
+		<% if(func.type == 'cfml') { %> 
+			
+
+			<%
+				//try and get the proper case sensitive name for this. WE can get it from the source attrib
+				var caseinsensitivename = func.source.split("/");
+
+			%>
+
+			<a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/library/function/<%= caseinsensitivename[caseinsensitivename.length-1] %>" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a><
+			
+		<%}%>
+
+		<% if(func.type == 'java') { %>
+            <a href="https://bitbucket.org/lucee/lucee/src/<%=majmin%>/lucee-java/lucee-core/src/resource/fld/web-cfmfunctionlibrary_1_0" target="_new">Source <span class="glyphicon glyphicon-new-window"></span></a>
+		<%}%>
+    <a class="btn btn-primary btn-xs" href="https://github.com/cybersonic/luceedocs/tree/develop/export/<%=version%>/json/functions/<%= func.name %>.json" target="_new">Suggest an edit <span class="glyphicon glyphicon-pencil"></span></a></h5>
+
+
+    <h4>Example</h4>
+
+	<pre class="prettyprint"><%= tagcode %></pre>
+
+	<% if(func.member && Object.keys(func.member).length){ %>
+	<h4>Member functionality</h4>
+		<table class="table table-bordered">
+			<tbody>
+			<tr><th>Chanining Allowed?</th><td><%= func.member.chaining %></td></tr>
+			<% if(func.member.name.length){%>
+
+				<tr><th>Object usage:</th><td>
+					<a href="/object/<%= func.member.type + '/' + func.member.name %>">
+					<em><%= func.member.type.capitalize() %></em>.<strong><%= func.member.name %></strong>( <%= argumentcode %> )
+						</a>
+
+				</td></tr>
+			<% } %>
+			</tbody>
+	</table>
+	<% } %>
+
+	<h4>Arguments</h4>
+
+	<% if(func.argumentType == 'fixed' && !func.arguments.length){%>
+
+		<div class="text"><%= arginfo.zero%></div>
+
+	<% } else if(func.arguments.length) { %>
+
+
+		<div class="text">
+			<%= arginfo.type[func.argumentType] %>
+
+			<% if(func.argumentType == "dynamic") { %>
+				<% if(func.attrMin > 0 && func.attrMax > 0) { %>
+				<%= arginfo.doc.minMax.replace(/{min}/, func.argMin).replace(/{max}/, func.argMax) %>
+				<%} else if(tag.argMin > 0){ %>
+				<%= arginfo.doc.min.replace(/{min}/, func.argMin) %>
+
+				<%} else if(tag.argMax > 0){ %>
+				<%= arginfo.doc.max.replace(/{max}/, func.argMax) %>
+
+				<%}%>
+			<%}%>
+		</div>
+
+
+	<% } %>
+
+	<% if(func.argumentType == 'fixed' && func.arguments.length){%>
+
+
+		<table class="table table-striped table table-bordered">
+			<thead>
+			<tr>
+				<th width="21%"><%= arginfo.name%></th>
+				<th width="7%"><%= arginfo._type%></th>
+				<th width="7%"><%= arginfo.required%></th>
+				<th width="65%"><%= arginfo.description%></th>
+			</tr>
+			</thead>
+			<tbody>
+
+			<% for(var a in func.arguments){ %>
+				<%
+					var attr = func.arguments[a];
+				 if(attr.status == "hidden"){
+					 continue;
+				 }
+
+				%>
+
+					<tr>
+						<td><%= attr.name%></td>
+						<td><%= attr.type %></td>
+						<td><%= attr.required ? "Yes":"No" %></td>
+						<td>
+							<% if(attr.status == 'deprecated') { %>
+							<b class="error">#arginfo.depArg#</b>
+							<% } else {%>
+
+									<%- attr.description.replace(/\n/g, "<br>") %>
+								<% } %>
+							</td>
+					</tr>
+
+			<% } %>
+			</tbody>
+		</table>
+	<% } %>
+	<% if(func.description.length > 300){ %>
+	<h4 class="anchor" id="longdesc">Full Description</h4>
+	<p><%- renderMarkdown(func.description) %></p>
+	<% } %>
+
+	<% if(examplecode && (examplecode.code.length||examplecode.codeGist.length)){ %>
+		<h4>Live Example</h4>
+		<% if(examplecode.codeGist.length){ %>
+			<a href="https://gist.github.com/<%= examplecode.codeGist %>" target="_blank">View on Github <span class="glyphicon glyphicon-new-window"></span></a> <span>(to suggest a change, fork this gist and submit PR)</span>
+		<% } %>
+		<div code-editor
+			id="code-example"
+			mode="coldfusion"
+			engine="lucee"
+			width="<%= examplecode.width %>"
+			height="<%= examplecode.height %>"
+			show-options="<%= examplecode.showOptions %>"
+			code-gist="<%= examplecode.codeGist %>"
+			code="<%= examplecode.code %>"
+			setup-code="<%= examplecode.setupCode %>"
+			setup-code-gist="<%= examplecode.setupCodeGist %>"
+			show-results="<%= examplecode.showResults %>"></div>
+	<% } %>
+
+	<% if(process.env.NODE_ENV && process.env.NODE_ENV == 'production'){ %>
+
+
+	<div class="well">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+			var disqus_shortname = 'Luceedocs';
+			var disqus_identifier = "function_<%= func.name %>";
+
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+<% } %>
