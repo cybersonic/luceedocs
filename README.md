@@ -1,4 +1,6 @@
 #LuceeDocs Server
+
+[![Join the chat at https://gitter.im/cybersonic/luceedocs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/cybersonic/luceedocs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This application is used to power railodocs.org (soon! soon!). It essentially formats json files that define the documentation for tags and functions that are produced by Lucee server ( http://www.getrailo.org/ ). 
 
 ##Installation
